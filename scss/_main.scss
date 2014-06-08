@@ -55,6 +55,9 @@ a {
 		border-bottom: 1px solid #ccc;
 		margin-bottom: 1em;
 	}
+	.post:last-child {
+		border: 0;
+	}
 }
 .post-title {
 	font-size: 1.35em;
