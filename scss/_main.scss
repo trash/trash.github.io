@@ -1,0 +1,43 @@
+.header {
+	background: #1abc9c;
+	@include border-top-radius(0.25em);
+	margin-bottom: 1em;
+	* {
+		color: #fff;
+		text-shadow: 0 0 4px black;
+		display: inline-block;
+	}
+}
+
+body {
+	background: #666;
+	padding: 1em 2em;
+}
+
+.site {
+	background: #fff;
+	box-shadow: 0 3px 10px rgba(0,0,0,.3);
+	border-radius: 0.25em;
+	padding-bottom: 1em;
+}
+
+
+
+.content, .footer, .header { 
+	padding: 1em;
+}
+
+h1 {
+	font-size: 2em;
+	color: #eee;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+@media (min-width: 48em) {
+	.content, .footer, .header { 
+		padding: 0 25%;
+	}
+}
