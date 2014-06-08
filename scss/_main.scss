@@ -28,12 +28,23 @@ body {
 }
 
 h1 {
-	font-size: 2em;
-	color: #eee;
+	font-size: 1.75em;
+	color: #666;
 }
 
 h2 {
 	font-size: 1.5em;
+}
+
+
+.content {
+	overflow: hidden;
+}
+
+.me {
+	width: 25%;
+	padding-right: 1em;
+	float: left;
 }
 
 @media (min-width: 48em) {
