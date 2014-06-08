@@ -19,7 +19,16 @@
 				<a class="extra" href="{{ site.homeurl }}">\\home</a>
 				<a class="extra" href="{{ site.baseurl }}/about.html">\\about</a>
 			</div>
-
+			<div class="sidebar">
+				<ul class="posts">
+					{% for post in site.posts %}
+						<li class="post">
+							<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+							<span>{{ post.date | date_to_string }}</span> 
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
 			<div class="content">
 				{{ content }}
 			</div>

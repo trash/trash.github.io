@@ -22,8 +22,6 @@ body {
 	margin-bottom: 1em;
 }
 
-
-
 .content, .footer, .header { 
 	padding: 1em;
 }
@@ -40,6 +38,41 @@ h2 {
 
 .content {
 	overflow: hidden;
+	padding-left: 0 !important;
+}
+
+.posts {
+	list-style: none;
+	.post {
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 1em;
+	}
+}
+.post-title {
+	font-size: 1.35em;
+	span {
+		font-size: 0.85em;
+		float: right;
+	}
+}
+
+.sidebar {
+	width: 25%;
+	float: left;
+
+	.posts {
+		list-style: none;
+	}
+	.post {
+		border-bottom: 1px solid #eee;
+		span {
+			display: block;
+			font-size: 0.85em;
+		}
+		a {
+			font-size: 1.25em;
+		}
+	}
 }
 
 .me {
