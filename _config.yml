@@ -2,3 +2,4 @@ name: Ripple Blog
 markdown: redcarpet
 pygments: true
 baseurl: "/ripple"
+homeurl: "/ripple/index.html"
