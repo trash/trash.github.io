@@ -57,6 +57,10 @@ h2 {
 	font-size: 1.5em;
 }
 
+h3 {
+	font-size: 1.25em;
+}
+
 a {
 	color: #177E6A;
 	@include transition(color 150ms ease-in-out);
