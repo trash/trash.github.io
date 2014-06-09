@@ -33,7 +33,6 @@
 
 body {
 	background: #333;
-	padding: 1em 2em;
 }
 
 .site {
@@ -130,6 +129,7 @@ code.block {
 	border: 1em solid #116D53;
 	padding: 1em;
 	max-width: 40em;
+	width: 100%;
 }
 
 .me {
@@ -138,6 +138,11 @@ code.block {
 	float: left;
 }
 
+@media (min-width: 30em) {
+	body {
+		padding: 1em 2em;
+	}
+}
 @media (min-width: 48em) {
 	.content, .footer, .header { 
 		padding: 0 25%;
