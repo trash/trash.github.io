@@ -1,28 +1,12 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Blog!?"
 date:   2014-06-08 13:41:56
-categories: jekyll update
+categories: hello world blorg
 ---
 
-### This a auto generated hello world post but I'm just going to leave it so the blog seems less empty.
+After much toiling I've started a blog. 
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+Now it's time for a beer. Cheers!
 
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-	puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
-
-### I'm leaving this.
+<img class="not-even-baked"  src="{{ site.baseurl }}/img/sohigh1.png">
