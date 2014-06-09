@@ -2,10 +2,31 @@
 	background: #1abc9c;
 	@include border-top-radius(0.25em);
 	margin-bottom: 1em;
+	background-image: url('/ripple/img/tiles.png');
+	position: relative;
+	height: 10em;
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		background: rgba(0, 0, 0, 0.75);
+		bottom: 0;
+		height: 100%;
+		left: 0;
+		right: 0;
+	}
+
 	* {
 		color: #fff;
 		text-shadow: 0 0 4px black;
 		display: inline-block;
+	}
+
+	.header-text {
+		z-index: 1;
+		position: absolute;
+		bottom: 0;
 	}
 }
 
