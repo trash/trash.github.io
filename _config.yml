@@ -12,7 +12,7 @@ homeurl: "/ripple/index.html"
 owner:
   name:           Stefan Valentin
   avatar:         picome.png
-  bio:            "Some guy."
+  bio:            "Writer of code. Drinker of white russians. Dreams of owning a naked mole rat farm."
   email:          stefan.m.valentin@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        "slowestbro"
@@ -34,10 +34,8 @@ links:
     url: /about/
   - title: Posts
     url: /posts/
-  - title: Theme Setup
-    url: /theme-setup/
-  - title: Made Mistakes
-    url: http://mademistakes.com
+  - title: whats.gd
+    url: http://whats.gd
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones

@@ -15,3 +15,5 @@ I'm Stefan. I'm a web developer working at a startup in Austin.
 In my free time I work on a game, a game that I'm for now calling Ripple.
 This will be a place for me to write about all the aspects of game development that I'm working on and all the discoveries I'm making (that are interesting enough to blog about) along the way.
 Stay tuned.
+
+###### My other website is here: [What's good?](http://whats.gd)
