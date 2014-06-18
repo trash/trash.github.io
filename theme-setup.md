@@ -5,9 +5,9 @@ title: Theme Setup
 description: "Instructions on how to install and customize the Jekyll theme Minimal Mistakes."
 tags: [Jekyll, theme, responsive]
 image:
-  feature: texture-feature-02.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+  feature: skinny-skrimble.png
+  <!-- credit: Texture Lovers -->
+  <!-- creditlink: http://texturelovers.com -->
 ---
 
 <section id="table-of-contents" class="toc">
