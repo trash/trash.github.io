@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Blog!?"
 date:   2014-06-08 22:41:56
-categories: hello world blorg
+categories: blog
 ---
 
 After much toiling I've started a blog for the game I'm currently working on.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Useful Git Stats"
 date:   2014-06-08 21:28:00
-categories: code updates
+categories: code
 ---
 
 So today I finished another weekend of coding on the game and was wondering "Well, how much did I really commit?"
