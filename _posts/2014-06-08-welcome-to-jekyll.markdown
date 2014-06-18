@@ -11,4 +11,4 @@ I'm not certain on what will populate this fetid pit of the internet but it will
 
 Now it's time for a beer. Cheers!
 
-<img class="not-even-baked"  src="{{ site.baseurl }}/img/sohigh1.png">
+<img class="not-even-baked"  src="{{ site.baseurl }}/images/sohigh1.png">
