@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Let's Call It Ripple"
-date:   2014-06-17 19:33:00
+date:   2014-07-12 19:33:00
 categories: games ripple development
 ---
 
@@ -9,17 +9,7 @@ I'm making a game.
 
 Well, that's good to get off my chest.
 
-<!-- As a part of writing this up I did a little research just to get some stats on how far I've gotten since I started development, and some of them actually surprise me.
-
-My first commit was on May 17th. Which means I've been working on the game for a little bit under 2 months.
-
-In that time I've pushed 240 commits, which in non-git terms means I've added to the codebase 240 separate times. An admittedly pretty ambiguous statement as some of those commits were little more than commenting a function, while others were very large refactors or adding new complex features.
-
-Let's talk about Seinfeld. By now most people are familiar with [the Seinfeld strategy for getting good at something](http://lifehacker.com/281626/jerry-seinfelds-productivity-secret). The "Don't Break The Chain" technique. Since May 28th I've written code for the game every single day. 46 days straight, which of course is my longest streak of writing code every day straight ever. And probably the longest I've worked on anything consistently over a period of time.
-
-Again, some of the code written for a given day was little more than going back and tweaking something or adding a comment, trivial tasks. But I don't think that takes away from the significance of the task, that is consistently doing something every day.
-
-I think this consistency has almost everything to do with this project not disappearing into the aether, and in fact progressing much faster and farther than I might have guess in 2 months time. -->
+<!-- As a part of writing this up I did a little research just to get some stats on how far I've gotten since I started development, and some of them actually surprise me.[]My first commit was on May 17th. Which means I've been working on the game for a little bit under 2 months.[]In that time I've pushed 240 commits, which in non-git terms means I've added to the codebase 240 separate times. An admittedly pretty ambiguous statement as some of those commits were little more than commenting a function, while others were very large refactors or adding new complex features.[]Let's talk about Seinfeld. By now most people are familiar with [the Seinfeld strategy for getting good at something](http://lifehacker.com/281626/jerry-seinfelds-productivity-secret). The "Don't Break The Chain" technique. Since May 28th I've written code for the game every single day. 46 days straight, which of course is my longest streak of writing code every day straight ever. And probably the longest I've worked on anything consistently over a period of time.[]Again, some of the code written for a given day was little more than going back and tweaking something or adding a comment, trivial tasks. But I don't think that takes away from the significance of the task, that is consistently doing something every day.[]I think this consistency has almost everything to do with this project not disappearing into the aether, and in fact progressing much faster and farther than I might have guess in 2 months time. -->
 
 
 <figure class="half">
