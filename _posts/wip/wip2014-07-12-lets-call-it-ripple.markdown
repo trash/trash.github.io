@@ -2,7 +2,8 @@
 layout: post
 title:  "Let's Call It Ripple"
 date:   2014-07-12 19:33:00
-categories: games ripple development
+categories: development
+comments: true
 ---
 
 I'm making a game.
