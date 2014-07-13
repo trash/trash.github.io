@@ -8,8 +8,6 @@ image:
   feature: ripplepostheader.png
 ---
 
-<!-- <img src="{{ site.baseurl }}/images/ripplepostheader.png"> -->
-
 So I made a game. Let's call it Ripple.
 
 It's kind of crazy that I've only been working on the game for two months because a lot has happened in that time. 240 commits. I've written code for the game every single day for 47 days straight. A port from full HTML to actual graphics using the Phaser game engine. 
@@ -25,11 +23,11 @@ The emphasis will be on building a town while still making individuals in the to
 1. The player who wants to build a thriving town in a vibrant, breathing fantasy environment. More interested in braving the wilds and the success of the town's economy than the minutiae of every individual citizen's life-happenings.
 2. The player who wants to build a town so they can sit back and watch all the absurd, funny, amusing, tragic things that happen in their citizen's lives. 
 
-As with any good simulation the emphasis will be on providing compelling emergent gameplay. That is the world will foster interesting and unique stories every time you play it. The game will feature mechanics complex enough to require mastery but not so complex as to be esoteric or impossible to understand.
+As with any good simulation the emphasis will be on providing compelling emergent gameplay. Meaning the world will foster interesting and unique stories every time you play it. The game will feature mechanics complex enough to require mastery but not so complex as to be esoteric or impossible to understand.
 
 ## What sets it apart?
 
-So, what will make up the game? What defines it? What sets it apart from Dwarf Fortress, Spacebase DF9, Stonehearth, Clockwork Empires, or Rimworld? 
+So, what will make up the game? What defines it? What sets it apart from Dwarf Fortress and its inspired relatives, Spacebase DF9, Stonehearth, Clockwork Empires, or Rimworld? 
 
 The environment and context for one. I'm heavily inspired by Dungeons and Dragons, specifically I've been reading a whole lot of R.A. Salvatore, and playing Forgotten Realms games like Baldur's Gate and Icewind Dale. It would be very apt to say that I see this as a game about settling a town in a random corner of Faerûn or some other fantasy landscape, where conflict and danger exist around every corner. I see this as a game about hardship and difficulty, about simulating the excitement of what it would be like to be on the edge of civilization in a foreign and magical land.
 
@@ -68,6 +66,12 @@ I've started this blog for a couple reasons.
 * It allows people to throw ideas at me, offer criticism or pointers, and all sorts of other interactions that I totally welcome.
 * It's a fantastic way to keep track of the progress of development. Where this project started and where it will go will be a joy to compare down the road.
 * It solidifies that I am taking this project seriously and I have no intention of stepping away from it.
+
+## Stay tuned
+
+Now that the game is all "announced" and stuff I'll be trying to get these posts out more frequently. Perhaps biweekly or weekly if I'm feeling especially uppity/inspired/time-having. 
+
+Next week I'll either do a blog post on how I've come along technically as far as development or I'll write a post on a game that really inspires me.
 
 
 
