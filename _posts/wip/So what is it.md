@@ -73,5 +73,7 @@ Now that the game is all "announced" and stuff I'll be trying to get these posts
 
 Next week I'll either do a blog post on how I've come along technically as far as development or I'll write a post on a game that really inspires me.
 
+If you're interested in hearing more about the game and where it's going and other stuff games and game development related, [sign up for the mailing list]({{ site.baseurl }}/subscribe) and I'll make sure you're kept up to speed.
+
 
 
