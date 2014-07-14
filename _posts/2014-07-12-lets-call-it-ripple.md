@@ -8,7 +8,7 @@ image:
   feature: ripplepostheader.png
 ---
 
-So I made a game. Let's call it Ripple.
+So I'm making a game. Let's call it Ripple.
 
 It's kind of crazy that I've only been working on the game for two months because a lot has happened in that time. 240 commits. I've written code for the game every single day for 47 days straight. A port from full HTML to actual graphics using the Phaser game engine. 
 
