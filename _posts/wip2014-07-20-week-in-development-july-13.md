@@ -8,7 +8,7 @@ image:
   feature: week-in-development-header.png
 ---
 
-"The Week In Development". Sounds so legitimate and professional. Only it's not. It's basically my excuse for not coming up with a more formal or interesting blog post so I'll just run through the stuff I did related to code and development for the game over the past week. I'll be trying to get these out every week hopefully alongside other posts.
+"The Week In Development". Sounds so legitimate and professional. Only it's not. It's basically my excuse for not coming up with a more formal or interesting blog post. So in short I'll just run through the stuff I did related to code and development for the game over the past week. I'll be trying to get these out every week hopefully alongside other posts.
 
 This week I simultaneously felt like I coded very little but implemented some important features nonetheless. Let's run through the big ones. And talk about the hilarious life-destroying consequences of their implementation.
 
@@ -19,21 +19,21 @@ Finally added an in game clock.
 
 So the context for this change is that I somehow had a fully functioning simulation working without any real way of telling or keeping track of time. 
 
-What I mean by this is under the hood I have everything linked to my game loop. Certain actions and tasks, e.g. chopping down a tree, walking around, sleeping, take certain amounts of "ticks" on the game clock to be finished. Normally you tie these "ticks", a very low-level concept tied to a very fast clock (normal game speed is 20 ticks/second), to a higher level abstraction using more normalized time (hours, days, years, etc.). And I imagine that this is something most people probably work on pretty early in development. But I decided to just kind of shirk that need for 2 months. 
+What I mean by this is under the hood I have everything linked to my game loop. Certain actions and tasks, e.g. chopping down a tree, walking around, sleeping, take certain amounts of "ticks" on the game clock to be finished. Normally you tie these "ticks", a very low-level concept tied to a very fast clock (normal game speed is 20 ticks/second), to a higher level abstraction using more normalized time (hours, days, years, etc.). I imagine that this is something most people probably work on pretty early in development. But I decided to just kind of shirk that need for 2 months. 
 
 So, yeah, it turns out it's really helpful and and much easier to say "hey sleeping takes 6 hours out of a citizen's day" instead of "hmm so chopping a tree is like 600 ticks so maybe sleeping should be something like 10,000 ticks...wait how long is a tick again?".
 
 ### Death
 
-Making the in game clock paved the way for the next development: death. I think I finally introduced the concept of citizens dying off from starvation last week or something. The thing was, it was really janky because I had no great way of gauging "when" a citizen should die because the whole fun-with-ticks bonanza in the code. After Tuesday, I can very definitively say in the world of Ripple, you die after 3 days of not eating. 
+Making the in game clock paved the way for the next development: death. I think I finally introduced the concept of citizens dying off from starvation last week or something. The thing was, it was really janky because I had no great way of gauging "when" a citizen should die because the whole fun-with-ticks bonanza in the code. After Tuesday, I can definitively say, in the world of Ripple, you die after 3 days of not eating. 
 
 This is good news of course.
 
 ### Idling
 
-Currently in the world of Ripple a lot of citizens spend a whole lot of time doing nothing. What this meant is that you'd just have these little people sitting on the screen not moving or doing anything most of the time. As a person who spends 10-20 hours a week staring at them doing nothing it became agonizing very quickly.
+Currently in the world of Ripple a lot of citizens spend a whole lot of time doing nothing. What this meant is that you'd just have these little people sitting on the screen not moving or doing anything most of the time. As a person who spends 10-20 hours a week staring at them doing nothing, it became agonizing very quickly.
 
-So I thought, "Well real people don't just stand there like mindless automatons when they're bored/not doing anything". So I made them run around mindlessly. All around, all the time. It's actually just as mindless but mildly more entertaining to watch.
+So I thought, "Well real people don't just stand there like mindless automatons when they're bored/not doing anything". So I made them run around mindlessly. All around, all the time. It's actually just as mindless, possibly even less realistic, but mildly more entertaining to watch.
 
 Obviously I have long term solutions in mind for solving this whole "idling epidemic" but those solutions involve making citizens always have jobs/hobbies/relationships to be spending time on and that requires a lot of work.
 
@@ -49,7 +49,7 @@ Another way to remedy the over abundance of food was to tackle demand as well as
 
 Farms weren't the only target of supply-based balancing. I also balanced the amount of wood harvested from cutting down a tree and the amount of stone harvested from mining.
 
-I also balanced the amount of sleep that citizen's needed. By default citizen's now sleep 6 hours out of the day. Long enough that it affects gameplay but not long enough that you're stuck sitting waiting for citizens to wake up before they do something else.
+I also balanced the amount of sleep that citizen's needed. By default, citizens now sleep 6 hours out of the day. Long enough that it affects gameplay but not long enough that you're stuck sitting waiting for citizens to wake up before they do something else.
 
 Apart of these tweaks to sleep, I finally gave a purpose to houses in the game. Initially, houses were just something you built but didn't actually serve a purpose. I changed sleep so that citizen's without a home in must spend twice as much time sleeping. This means that if you don't build houses, your citizens spend half the day sleeping.
 
@@ -57,13 +57,13 @@ Apart of these tweaks to sleep, I finally gave a purpose to houses in the game. 
 
 The compound effects of all of these changes are actually pretty hilarious.
 
-Let's take inventory real quick: citizens die from starvation, food is far less plentiful, working makes citizens far hungrier, citizens have to work much longer to get the same amount of resources, homeless citizens sleep half the day, idle citizens run around the map like mad men.
+Let's take inventory real quick: citizens die from starvation, food is far less plentiful, working makes citizens far hungrier, citizens have to work much longer to get the same amount of resources, homeless citizens sleep half the day.
 
 Wait let's add a feature (read: bug) in there: a citizen who becomes hungry during a task still won't stop the task until it's complete. This includes sleeping.
 
 What this means is if a citizen goes to sleep who is starving, they will actually perish in their sleep from starvation before they wake up. This happens. All. The. Time.
 
-Okay, okay, just build more farms and build houses. Less sleeping, more eating and all that jazz. Okay but remember, working, so building, tires citizens out more. So builders for especially long projects *always* die of starvation. Even if I switch every citizen in the game to the builder profession, the tavern for instance (a building high in resource costs) will never be completed. They will all die.
+Okay, okay, just build more farms and build houses. Less sleeping, more eating and all that jazz. Okay but remember, working--so, building--tires citizens out more. So builders for especially long projects *always* die of starvation. Even if I switch every citizen in the game to the builder profession, the tavern for instance (a building high in resource costs) will never be completed. They will all die.
 
 Obviously this requires some adjustment to the way tasks are handled to allow for interruptions for primary needs like the whole eating-so-you-don't-die thing.
 
