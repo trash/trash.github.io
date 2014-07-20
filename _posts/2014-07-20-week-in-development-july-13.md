@@ -5,7 +5,7 @@ date:   2014-07-20 17:00:00
 categories: development
 comments: true
 image:
-  feature: week-in-development-header.png
+  feature: week-in-development-header.jpg
 ---
 
 "The Week In Development". Sounds so legitimate and professional. Only it's not. It's basically my excuse for not coming up with a more formal or interesting blog post. So in short I'll just run through the stuff I did related to code and development for the game over the past week. I'll be trying to get these out every week hopefully alongside other posts.
