@@ -63,7 +63,7 @@ Wait let's add a feature (read: bug) in there: a citizen who becomes hungry duri
 
 What this means is if a citizen goes to sleep who is starving, they will actually perish in their sleep from starvation before they wake up. This happens. All. The. Time.
 
-Okay, okay, just build more farms and build houses. Less sleeping, more eating and all that jazz. Okay but remember, working--so, building--tires citizens out more. So builders for especially long projects *always* die of starvation. Even if I switch every citizen in the game to the builder profession, the tavern for instance (a building high in resource costs) will never be completed. They will all die. They will all die every time. There will be no joy in the tavern tonight. Because there will be no tavern. And there will be no tavern because they're all dead.
+"Okay, okay", you say, "just build more farms and houses. Less sleeping, more eating, and all that jazz." Okay but remember, working--so, building--tires citizens out more. So builders for especially long projects *always* die of starvation. Even if I switch every citizen in the game to the builder profession, the tavern for instance (a building high in resource costs) will never be completed. They will all die. They will all die every time. There will be no joy in the tavern tonight. Because there will be no tavern. And there will be no tavern because they're all dead.
 
 *Ahem*. 
 
