@@ -5,7 +5,7 @@ date:   2014-09-21 17:00:00
 categories: development
 comments: true
 image:
-  feature: week-in-development-header.jpg
+  feature: month-in-development-header.png
 ---
 
 Something something it's been a while.
@@ -67,66 +67,101 @@ Speaking of Bearsmasher I've been looking into getting music into the game. One 
 
 A month's worth of changes, here we go.
 
-* Sunday, July 27th
-  * Comments
-* Monday, July 28th
-  * Moved resources count up with the clock to the top
-  * Moved play/pause/time-controls up to top, log to bottom right
-  * Game log messages can be auto-dismissed
-  * Messages have timestamps, clock returns timestamp data
-  * Can pause game with spacebar and change game speed 1-3 buttons
-  * Added a sprite to the citizen card that highlights the citizen’s sprite when you hover over it
-* Tuesday, July 29th
-  * Comments
-* Wednesday, July 30th
-  * Moved intializing citizens out of the controller into gameManager code
-* Thursday, July 31st
-  * Simplified spawning citizens a little
-* Friday, August 1st
-  * Comments/cleanup
-* Saturday, August 2nd
-  * Clicking a citizen now filters citizen list down to just that citizen
-* Sunday, August 3rd
-  * Improvements to log messages
-  * Pulled out tooltips for citizens into a reusable tooltip service
-  * Tooltips for: crops, stone, wood
-* Monday, August 4th
-  * Tooltips for houses
-* Tuesday, August 5th
-  * comments
-* Wednesday, August 6th
-  * Tooltip for storage building
-* Thursday, August 7th
-  * Tooltips for farms
-  * Minor crop refactor
-* Friday, August 8th
-  * Tooltips for rocks/trees
-* Saturday, August 9th
-  * Tooltips for corpses
-* Sunday, August 10th
-  * Created female citizens
-  * UI counter for citizens
-  * Females now have female names that aren’t Chet
-  * Basic entering building action for citizens
-* Monday, August 11th
-  * Working on creating a general GoToBuildingAction
-* Tuesday, August 12th
-  * Got basic animating of sprites
-  * Sprite animation for citizens now based on direction of movement
-  * Refactor of how actions are initialized
-  * Fixed teleporting bug for citizens patching home
-  * Female sprite images for citizen cards
-* Wednesday, August 13th
-  * Skeleton of building card
-  * Citizens now path to tavern if they’re idle (and it exists)
-* Thursday, August 14th
-  * Comments
-* Friday, August 15th
-  * More comments
-* Saturday, August 16th
-  * Farms now grow wheat
-  * Farms have 3 stages of growth with separate sprites for each stage
-  * Skeletoned out a baker profession and bakery building
+* Sunday, August 17th
+  * Got very basic building card when building is clicked
+* Monday, August 18th
+  * Added a little bit more to the building card
+* Tuesday, August 19th
+  * Added ability to spawn building already completed
+  * Created mechanism to start game with buildings completed on map
+* Wednesday, August 20th
+  * Improved styling of building card a bit
+* Thursday, August 21st
+  * Added/cleaned up a couple comments
+* Friday, August 22nd
+  * Modified starting buildings
+* Saturday, August 23rd
+  * Now you can close the building card
+* Sunday, August 24th
+  * Added crate sprite
+  * Created a new UIWindow class for creating ui windows.
+  * Skeletoning out some of the goods menu
+* Monday, August 25th
+  * Got basic skeleton of structure for goods menu in place
+* Tuesday, August 26th
+  * ADded comments for new ui window code
+* Wednesday, August 27th
+  * Working on fleshing out the BakerTask code
+* Thursday, August 28th
+  * Created a generalized solution for resource requirements for tasks
+  * Working on creating working baker tasks
+* Friday, August 29th
+  * Fixed bug with citizen not getting instance
+* Saturday, August 30th
+  * Refactored the way tasks and task instances are considered complete
+* Sunday, August 31st
+  * Bread is now actually created at the end of the baker task.
+  * Citizens now eat bread
+  * Added code to automatically queue up the creation of bread
+* Monday, September 1st
+  * ADded some comments to new resource methods
+* Tuesday, September 2nd
+  * Commented the baker task
+* Wednesday, September 3rd
+  * ADded bakery sprite. lol storage building sprite with big B
+* Thursday, September 4th
+  * Working on skeletoning out brewery stuff for brewers
+* Friday, September 5th
+  * Laid out a little bit more infrastructure for brewers
+* Saturday, September 6th
+  * Made layout for goods menu tabbed. More automated goods menu code
+  * Added sprite for beer. Looks like it's kind of working.
+  * Fixed bug where beer wasn't "Edible"
+* Sunday, September 7th
+  * Added new CraftTask to have Brewer/BakerTasks extend from
+  * jshint fixes
+  * Trees can grow back now. Set up a useful timer on the game clock
+* Monday, September 8th
+  * Commented the game clock code
+* Tuesday, September 9th
+  * Added carpenters, carpenter shop, and crates to game
+* Wednesday, September 10th
+  * Made crates able to store things
+  * Working on adding a item card window for info on items that are clicked
+  * Added basic html for item card to list items for crate
+* Thursday, September 11th
+  * Item card now properly updates. Crate only lists items that are store…
+  * Got basic crappy hover item for moving items
+* Friday, September 12th
+  * Got basic implementation of hover item showing proper sprite
+* Saturday, September 13th
+  * Pulled out duplicated code in item instances into parent Item class
+  * Pulled out static json extending inside items constructors into Item
+  * Some comments
+  * Properly highlighting invalid tiles for item placement
+  * Items can be moved around. Crates can be moved around without game breaking
+* Sunday, September 14th
+  * Fixed bug with moving items because they were flagged as stored when not
+* Monday, September 15th
+  * Crates can't be moved unless they're full. Fixed goods menu opening bug
+  * Fixed farmers not working together on tasks. Refactoring storage object code
+* Tuesday, September 16th
+  * Added comments to new storage methods
+* Wednesday, September 17th
+  * Fixed 2 bugs. 1) Too many resources being marked for storage 2) bad queuing
+* Thursday, September 18th
+  * Moving a crate actually moves the items inside too
+* Friday, September 19th
+  * Added names service for generating names
+* Saturday, September 20th
+  * Added a bunch more names to the names service
+  * More names
+  * Refactored the names service a little bit
+* Sunday, September 21st
+  * Renamed Crop to Wheat class. Made crops service to mirror other goods
+  * Crates can now be spawned succesfully with items inside
+  * All the starting resources start in crates now
+  * Added a method to the map for clearing an area of starting trees/rocks/etc.
 
 
 
