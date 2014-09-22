@@ -20,13 +20,13 @@ A good chunk of the month was spent laying the groundwork for adding new items a
 
 It went well and now it shouldn't be much harder than adding a simple json object to a list and BAM we'll have lots of new items that can be crafted by the citizens.
 
-So we have items and we have people who craft them and know how to do that but *when* do they craft these items? As with a lot of other games in this space, the player is left up to setting up the supply chain required to produce the necessities for your people. What I mean by this is, even though your people might really need beer ([like me](http://localhost:4000/ripple/images/sohigh1.png)) they won't just go and create it unless you tell them to do so.
+So we have items and we have people who craft them and know how to do that but *when* do they craft these items? As with a lot of other games in this space, the player is left up to setting up the supply chain required to produce the necessities for your people. What I mean by this is, even though your people might really need beer ([like me](http://localhost:4000/ripple/images/sohigh1.png)), they won't just go and create it unless you tell them to do so.
 
-I imagine there are several ways in which the player can control how much of each resource are being created by your people, but I went the route of Banished/Gnomoria. The way it works is instead of manually queueing up these tasks for each citizen, you just specify a total amount desired for a given resource for the entire town. So let's say we want to maintain a stock of 100 units of beer at all times. Well we go into this menu and set the desired beer count to 100. The effect of this is, given the required resource to craft beer, your citizens will always craft just enough to stay at that count. This frees the player up to make macro decisions about the economy of the town and not worry about the minutiae of each crafter involved. 
+I imagine there are several ways in which the player can control how much of each resource are being created by your people, but I went the route of Banished/Gnomoria. The way it works is instead of manually queueing up these tasks for each citizen, you just specify a total amount desired for a given resource for the entire town. So let's say we want to maintain a stock of 100 units of beer at all times. Well, we go into this menu and set the desired beer count to 100. The effect of this is, given the required resource to craft beer, your citizens will always craft just enough to stay at that count. This frees the player up to make macro decisions about the economy of the town and not worry about the minutiae of each crafter involved. 
 
 ### Cratos, God of Store
 
-So crates are pretty sweet. I mean when you guys are out and about and you see a crate, you prolly take off your cool sunglasses and say "damn" and stuff. I wish I was cool and had sunglass. **Ahem**. Anyway yeah crates are useful in Ripple. Items currently take up one tile on the map no matter what they are. That means when you start the game and you aren't in the favor of the crate gods, your game looks like this.
+So crates are pretty sweet. I mean when you guys are out and about and you see a crate, you prolly take off your cool sunglasses and say "damn" and stuff. I wish I was cool and had sunglass. **Ahem**. Anyway yeah crates are useful in Ripple. Items currently take up one tile on the map no matter what they are. This is especially a problem with a small map as items that you have a surplus of start filling up the screen. That means when you start the game and you aren't in the favor of the crate gods, your game looks like this.
 
 <figure>
   <img src="{{ site.baseurl }}/images/item-pile.png">
@@ -42,24 +42,24 @@ Majestic.
 
 ### Just Starting Out
 
-Those pictures you were looking at are actually what I currently have as the "start" of the game. The game proved way too difficult if you didn't start the game with some resources to help you out. To solve that, now you start with a whole bunch of resources spawned in the center of the map.
+Those pictures you were looking at are actually what I currently have as the "start" of the game. The game proved way too difficult if you didn't start the game with some resources to help you out. To solve that, now you start with a whole bunch of food and crafting materials at the center of the map.
 
-Along with this, I worked on spawning buildings at the start of the game. This is especially nice for testing things involving buildings because I don't have to go through the effort of building them first. The added benefit is it lays the groundwork for save games. I.e. when you save a game I just save some info like what buildings you had and then when I load the save game I just iterate through that list and spawn all the buildings you had before.
+Along with this, I worked on spawning buildings at the start of the game. This is especially nice for testing things involving buildings because I don't have to go through the effort of building them first. The added benefit is it lays the groundwork for save games. I.e. when you save a game I just save some info like what buildings you had and then when the save game is loaded I just iterate through that list and spawn all the buildings you had when you saved.
 
 ### Miscellaneous Stuff
 
-Trees grow back now. And by grow I mean they just show back up after a period of time. I have plans to make trees more interesting like farms with different visual stages of growth.
+Trees grow back now. And by grow I mean they just show back up after a period of time. I have plans to make trees more interesting like farms with different visual stages of growth. I also have plans to flesh out the ways trees grow back to be more "natural" as opposed to the stort of wack-a-mole nature of trees just growing back in place after a timer.
 
 Farmers actually work together. Before, because of some internal jank with collective task handling, essentially only one farmer could do work at a time. So you'd have a congo line of farmers with only one of them doing work while the others kind of just followed along. I imagine the guys following along just taking credit for all the work from the one guy actually doing his job, "Hey nice work there. Great job team."
 
 ### The House That Bearsmasher Built
 
 
-So I started working on names recently. Specifically generating more names and more interesting names. I took the route of prefix-suffix surname generation like Daggerfall/Arena did. So you have a list of words like 'ash', 'bear', and 'green' which get added to things like 'ford', 'house', 'ham' to get 'Ashford' and 'Greenham'. I added 'smasher' to the suffix list because who doesn't love names like "Bearsmasher" or "Ravensmasher".
+I started working on names recently. Specifically, I'm generating more names and more interesting names. I took the route of prefix-suffix surname generation like Daggerfall/Arena did. So you have a list of words like 'ash', 'bear', and 'green' which get added to things like "ford", "house", "ham" to get "Ashford" and "Greenham". I added "smasher" to the suffix list because who doesn't love names like "Bearsmasher" or "Ravensmasher".
 
 ### Music
 
-Speaking of Bearsmasher I've been looking into getting music into the game. One of the things I found suggested in various places was this wonderful tool that generates random music procedurally called [Abundant Music](http://abundant-music.com/). It's really freaking fantastic and I used it to create this song I'm for now calling "Bearsmasher's Death Knell". It's pretty hilarious especially when you consider that it was entirely written by an algorithm.
+Speaking of Bearsmasher I've been looking into getting music into the game. One of the things I found suggested in various places was this wonderful tool that generates random music procedurally called [Abundant Music](http://abundant-music.com/). It's really freaking fantastic and I used it to create this song I'm for now calling "Bearsmasher's Death Knell". It's pretty hilarious especially when you consider that it was entirely written by an algorithm. Sadly the page doesn't export as mp3 anymore which sucks because I actually enjoy the instrumentation that comes with the app. To get this track I exported the midi, opened it in Ableton Live, and mapped it to a preset instrument in Ableton. I made some minor edits and might work on it some more but for now I'm okay with it because it took about 10 minutes to get where it is. 
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/168764573&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 
