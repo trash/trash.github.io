@@ -1,49 +1,44 @@
-title:            Ripple Blog
-description:      "Hey, I'm Stefan and this is my blog. I write about making games, writing code, and whatever else."
-#Comment out url when working locally to resolve base urls correctly
-url:              /ripple
-disqus_shortname: "rippleblog"
+# Title of your blog; shows in the header
+name: "Ripple Blog"
 
-name: Ripple Blog
+# Description of your content (will only be used on Google Search)
+description: "Hey, I'm Stefan and this is my blog. I write about making games, writing code, and whatever else."
+
+# Your name. Will show in your footer + sidebar 
+author: "Stefan Valentin"
+
+url: "/ripple"
 baseurl: "/ripple"
 homeurl: "/ripple/index.html"
 
-# Owner/author information
-owner:
-  name:           Stefan Valentin
-  avatar:         picome.png
-  bio:            "Writer of code. Drinker of white russians. Dreams of owning a naked mole rat farm."
-  email:          stefan.m.valentin@gmail.com
-  # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:        "slowestbro"
-  github:         "khalilravanna"
-  # instagram:      "mmistakes"
-  # For Google Authorship https://plus.google.com/authorship
-  # google_plus:    "MichaelRoseDesign"
+# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words. 
+author-bio: "Writer of code. Drinker of white russians. Dreams of owning a naked mole rat farm."
 
-# Analytics and webmaster tools stuff goes here
+# Social Accounts (mine, as placeholders)
+
+twitter: slowestbro
+github: khalilravanna
+
+# Google Analytics (you may want to changes these with yours or even delete :)
+
+# ga_domain: m3xm.github.io
+ga_tracking_id: UA-51746110-1
 google_analytics:   UA-51746110-1
-# google_verify:      UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-# bing_verify:        D81F4C18A6CB3018F64D7C827D953DFD
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: About
-    url: /about/
-  - title: Posts
-    url: /posts/
-  - title: whats.gd
-    url: http://whats.gd
-    external: true
+# Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
-pygments:    true
-#highlighter: pygments
-markdown:    kramdown
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+
+paginate: 10
+paginate_path: "/page/:num"
+
+# SCSS
+
+sass:
+  sass_dir: _scss
+  style: :compressed
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
@@ -61,6 +56,3 @@ kramdown:
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

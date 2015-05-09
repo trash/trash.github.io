@@ -1,43 +1,83 @@
-# Minimal Mistakes
+# hikari
 
-**[Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes)** is a two column responsive Jekyll theme perfect for powering your GitHub hosted blog.
+Hikari is an open-source [Jekyll](http://jekyllrb.com) theme perfect for dev-savvy bloggers who wants to get started with Jekyll in a very minimal way. 
 
-## Minimal Mistakes is all about:
+- SCSS!
+- Responsive
+- Lightweight (no JS library has been abused here)
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/minimal-mistakes/articles/code-highlighting-post/) to make your code examples look snazzy.
+![preview](https://dl.dropboxusercontent.com/u/7539881/Hikari/hikari-screenshot.png)
 
-![screenshot of Minimal Mistakes theme](http://mmistakes.github.io/minimal-mistakes/images/mm-theme-post-600.jpg)
+![preview](https://dl.dropboxusercontent.com/u/7539881/Hikari/hikari-screenshot-2.png)
 
-## Basic Setup for a new Jekyll site
+![preview](https://dl.dropboxusercontent.com/u/7539881/Hikari/hikari-screenshot-3.png)
 
-1. [Install Bundler](http://bundler.io) `gem install bundler` and then install [Jekyll](http://jekyllrb.com) and all dependencies `bundle install`.
-2. Fork the [Minimal Mistakes repo](http://github.com/mmistakes/minimal-mistakes/fork).
-3. Clone the repo you just forked and rename it.
-4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, assigning categories and tags, and other YAML data.
+[View demo](http://m3xm.github.io/hikari-for-Jekyll)
 
-[Demo the Theme](http://mmistakes.github.io/minimal-mistakes)
 
-**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't need.
+### How to install
 
-## More Theme Setup Goodness
+1. Clone this repo
+2. Customize \_config.yml and replace all dummy posts by yours
+3. Change your profile picture in `~/assets/img/avatar.jpg`
+3. Publish (I recommend [GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages), it's free)
 
-To learn more about how customize this theme, include feature images in posts, use the Grunt build scripts, and some other junk, [read up here](http://mmistakes.github.io/minimal-mistakes/theme-setup/).
 
----
+### Development
 
-## Questions?
+- `master` for development and pull requests.
+- `gh-pages` for the demo page; don't bother.
 
-Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@mmistakes](http://twitter.com/mmistakes) or [file a GitHub Issue](https://github.com/mmistakes/minimal-mistakes/issues/new). And if you make something cool with this theme feel free to let me know.
 
----
+#### Running locally
 
-## License
+1. Clone this repo
+2. Install required dependencies with [Bundler](http://bundler.io/)
 
-This theme is free and open source software, distributed under the [GNU General Public License](http://mmistakes.github.io/minimal-mistakes/LICENSE) version 2 or later. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer. 
+        bundle install
+3. Run the site with Jekyll
+
+        bundle exec jekyll serve --watch
+4. Visit the site at [http://localhost:4000](http://localhost:4000)
+
+
+### Author
+
+**Mathieu Mayer-Mazzoli**
+- <http://m3xm.github.io>
+- <http://twitter.com/mx3m>
+- <http://www.dribbble.com/m3xm>
+
+
+### Main Contributors
+
+**Ross Allen**
+- <https://github.com/ssorallen>
+
+**Julien Rousseau**
+- <https://github.com/evarouss>
+
+
+### License
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Mathieu Mayer-Mazzoli
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -10,12 +10,18 @@ image:
   <!-- credit: Texture Lovers -->
   <!-- creditlink: http://texturelovers.com -->
 ---
+
+# Subscribe
+
 If you're interested in staying up to date on the development of the game, and hearing about all the thoughts and theory crafting along the way, sign up for the mailing list.
 
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	#mc_embed_signup form {
+		padding: 0;
+	}
 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
