@@ -8,7 +8,7 @@ image:
   feature: month-in-development-header.png
 ---
 
-Another 3 months of development has passed since I last did a blog post. I commited 249 commits in that amount of time. Quite a few changes. A solid mix between work on the engine and improving performance as well as work on art and the UI. Time to try to condense the changes down into something readable and perhaps even *interesting*. <small>(Cue gasp from the handful of people reading this.)</small>
+Another 3 months of development has passed since I last did a blog post. I pushed 249 commits to the codebase in that amount of time. Quite a few changes. A solid mix between a) work on the engine and improving performance as well b) work on art and the UI. Time to try to condense the changes down into something readable and perhaps even *interesting*. <small>(Cue gasp from the handful of people reading this.)</small>
 
 ### Major things:
 
@@ -21,7 +21,6 @@ Another 3 months of development has passed since I last did a blog post. I commi
 ### Smaller Things
 
 * Added a real menu.
-* Introduced concept of levels.
 * Replaced the pathfinding algorithm.
 * Created a minimap.
 
@@ -31,13 +30,7 @@ Let's get started.
 
 ## Who You, UI?
 
-Let's start on the visual side of things. So two major things happened to the game interface. First, I dropped my existing UI framework, AngularJS, in favor of ReactJS. And second, I overhauled the styling and layout of the UI to minimalize it and clean it up overall.
-
-### "Goodbye angular. Hello React"
-
-This change is pretty technical. As a front end developer, professionally I'm cursed by a need to stay hip to the newest development trends. One of those trends has been the mass exodus of developers moving from the last hot new framework for front end development, AngularJS, to the newest hot new framework, ReactJS.
-
-Did that sentence sound really boring? That's because it is really boring. The "tl;dr" of the change is that the whole interface is a lot easier to update and more performant overall.
+Let's start on the visual side of things. So two major things happened to the game interface. First, I overhauled the styling and layout of the UI to minimalize it and clean it up overall. And second, I dropped my existing UI framework, AngularJS, in favor of ReactJS.
 
 ### Haul's Overt UI Overhaul
 
@@ -77,7 +70,7 @@ I had decided long ago to remedy this situation but finally got around to it abo
 
 The minimap, another feature implemented simply enough, has proved both nifty and very useful.
 
-Each tile is represented on the minimap by a color corresponding the occupants of the tile. If it's green it has a tree, red it's has berries, darker grey it's a rock, black is an empty tile, and blue and light grey are citizens and monsters respectively.
+Each tile is represented on the minimap by a color corresponding to what's currently on it. If the tile is green it has a tree, red it has berries, darker grey there's a rock, black is an empty tile, and blue and light grey are citizens and monsters respectively.
 
 It's really nice to get an at-a-glance overview of what's going on across the map (which can be quite large now). That and it's been particularly useful for me when tweaking the map generation because I get an instananeous overview of the result of the code.
 
@@ -88,6 +81,12 @@ It's really nice to get an at-a-glance overview of what's going on across the ma
 </figure>
 
 You can also see in the above gif a white rectangle moving around. That's the current viewing window. You can't see the main game in the gif, but I'm moving the camera around and the white box is moving in unison to indicate what's being looked at on the map. All pretty standard stuff if you've ever played basically any RTS in the past 2 decades.
+
+### "Goodbye angular. Hello React"
+
+As a front end developer, professionally I'm cursed by a need to stay hip to the newest development trends. One of those trends has been the mass exodus of developers moving from the last hot new framework for front end development, AngularJS, to the newest hot new framework, ReactJS.
+
+Did that sentence sound really boring? That's because it is really boring. The "tl;dr" of the change is that the whole interface is a lot easier to update and more performant overall.
 
 
 ## Programmer Art is Satan
@@ -125,7 +124,7 @@ As with any new project where I'm trying to make as much progress as quickly as 
 
 If you're not familiar with the idea of <a href="http://en.wikipedia.org/wiki/Unit_testing" target="_blank">testing code</a>, it's basically the process by which you take a block of code and run it against some sort of input and test whether it gives you the output you expect.
 
-A trivial example might be a test for an `addition` function that takes in 2 terms and returns the sum of them. So you'd pass `addition` `1` and `1` and expect it to return `2`. If it returned any other number than `2` it failed the test and that code doesn't work properly.
+A trivial example might be a test for an `addition` function that takes in two terms and returns the sum of them. So you'd pass `addition` the arguments `1` and `1` and expect it to return `2`. If it returned any other number than `2` it failed the test and that code doesn't work properly.
 
 Tests are incredibly useful for establishing a level of assurance in the correctness of one's code. Let me give you a specific example from writing tests for this game.
 
@@ -133,11 +132,11 @@ Tests are incredibly useful for establishing a level of assurance in the correct
 
 So in its current implementation, the map in-game is a 2 dimensional grid. You got rows and you got columns. When a monster moves from one tile to the next they're changing either their row or their column by one.
 
-So a move down could be viewed as this:
+So a move down one tile from the top left corner could be viewed as this:
 
-`[0, 1] -> [0, 2]`
+`[0, 0] -> [0, 1]`
 
-So I have a method called `setPosition(column, row)` that each agent calls when they move. So the above move would just be the call `setPosition(0, 2)`.
+So I have a method called `setPosition(column, row)` that each agent calls when they move. So the above move would just be the call `setPosition(0, 1)`.
 
 So what's the point I'm trying to get to? This is all really simple, right? Maybe **too** simple...
 
@@ -145,7 +144,7 @@ I started writing tests around this code and found out that I had made a very sm
 
 That means every single time a monster was supposed to move down, they moved right. Every time they went to move left, they actually moved up.
 
-Now the hilarious thing about this specific bug is, since I had made this switch for EVERY call to setPosition, you might never notice it. Everything *kind of* still made sense. Everyone was in the topsy turvy world where right was down and left was up, so everyone would still kind of *look* like they were behaving properly. But it was still causing all sorts of weird, hard to explain bugs in the game.
+Now the hilarious thing about this specific bug is, since I had made this switch for EVERY call to `setPosition`, you might never notice it. Everything *kind of* still made sense. Everyone was in the topsy turvy world where right was down and left was up. So everyone would still kind of *look* like they were behaving properly because it was all consistent. But it was still causing all sorts of weird, hard to explain bugs in the game.
 
 "Whoa whoa run that back", you might say in a Waka Flocka Flame voice. "What does that have to do with testing?"
 
@@ -175,8 +174,6 @@ One: I actually have had some issues (like rendering) that need to be resolved n
 
 And two: gameplay is hard. Specifically making a game *fun* is really, *really* hard. It's hilarious because I think about some of the stuff I've been working on recently like pathfinding and rendering. These things may have seemed arcane or overly algorithmic and challenging before --- and they are or, can be, for sure --- but what's truly difficult is getting that secret formula to make a game *click* and just be fun. "*Just* be fun."
 
-But then that's just game development in a nut shell ain't it?
-
 
 ## So, What's Next
 
@@ -184,10 +181,10 @@ Hopefully I'll be busting out these optimizations and **hopefully** I'll get the
 
 ### It's A Celebration
 
-In other news I'm a little over 2 weeks away from hitting 1 year straight of writing javascript every day. That streak started when I began this project so that means this project will be turning 1 in the near future. Maybe I'll throw a party. Where I sit in a dark room toiling away writing code. Like I do every night. Like I've done every night for a year straight working on this game. Wait-- what's a party?
+In other news I'm a little over 2 weeks away from hitting 1 year straight of writing Javascript every day. That streak started when I began this project so that means this project will be turning 1 in the near future. Maybe I'll throw a party. Where I sit in a dark room toiling away writing code. Like I do every night. Like I've done every night for a year straight working on this game. Wait-- what's a party?
 
 ### Der Changelog
 
-249 commits this time around. Like last time I'm going to create a separate post to list them all. What's somewhat different is I'm going to list them in reverse chronological order as that seems to work better in my mind.
+249 commits this time around. Like last time I'm going to create a separate post to list them all.
 
 [Changelog]({{ site.baseurl }}/changelog/changelog-february-09)
