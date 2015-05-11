@@ -188,3 +188,7 @@ In other news I'm a little over 2 weeks away from hitting 1 year straight of wri
 249 commits this time around. Like last time I'm going to create a separate post to list them all.
 
 [Changelog]({{ site.baseurl }}/changelog/changelog-february-09)
+
+## Subscribe
+
+Oh and don't forget to <a href="/ripple/subscribe">subscribe</a> if you want to keep up with how the game is developing!
