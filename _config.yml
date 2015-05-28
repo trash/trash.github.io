@@ -13,6 +13,8 @@ homeurl: "/ripple/index.html"
 
 # A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words. 
 author-bio: "Writer of code. Drinker of white russians. Dreams of owning a naked mole rat farm."
+site-description: "This is the development blog for the game I'm working on called Ripple. It's a 2D turn based simulation/strategy game that draws inspiration from Majesty, Dwarf Fortress, and the Sims."
+site-description-2: "For a more detailed description of my vision for the game check out <a href='/ripple/development/lets-call-it-ripple/'>this blog post</a>."
 
 # Social Accounts (mine, as placeholders)
 
