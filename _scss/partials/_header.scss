@@ -14,9 +14,7 @@ header {
 }
 
 .h-wrap {
-  // @extend %padding-large;
-
-  padding: 2em 0;
+  @extend %padding-large;
   max-width: 60em;
   margin: 0 auto;
   position: relative;
@@ -37,7 +35,6 @@ header {
   } // end h1.title
 
   .close {
-    padding: 2em;
     .lines {
       -webkit-transition: background .3s 0s ease;
       transition:         background .3s 0s ease;
@@ -69,9 +66,20 @@ header {
   } // end .close
 } // end .h-wrap
 
+@media (min-width: 60em) {
+  .h-wrap {
+    padding: 2em 0;
+  }
+  .menu-icon {
+    padding: 2em 0;
+  }
+  .close {
+    padding: 2em;
+  }
+}
+
 .menu-icon {
-  // @extend %padding-large;
-  padding: 2em 0;
+  @extend %padding-large;
   position: absolute;
   top: 0;
   right: 0;
