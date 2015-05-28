@@ -55,9 +55,12 @@
           <h1 class="title"><a href="{{ site.baseurl | split:'/' | join:'/' | append:'/'  }}" title="Back to Homepage">{{ site.name }}</a></h1>
           <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
         </div>
+        <div class="header-image-wrap">
+          <img src="{{ site.baseurl }}/images/ripple-banner.png"/>
+        </div>
       </header>
 
-      <main>
+      <main style="max-width: 60em; margin: 0 auto;">
         {{ content }}
       </main>
 

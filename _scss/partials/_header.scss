@@ -3,8 +3,23 @@ header {
   background: white;
 }
 
+.header-image-wrap {
+  text-align: center;
+
+  img {
+    width:100%;
+    max-width: 60em;
+    border: 1px solid #000;
+  }
+}
+
 .h-wrap {
-  @extend %padding-large;
+  // @extend %padding-large;
+
+  padding: 2em 0;
+  max-width: 60em;
+  margin: 0 auto;
+  position: relative;
   
   h1.title {
     @extend h3;
@@ -22,6 +37,7 @@ header {
   } // end h1.title
 
   .close {
+    padding: 2em;
     .lines {
       -webkit-transition: background .3s 0s ease;
       transition:         background .3s 0s ease;
@@ -54,7 +70,8 @@ header {
 } // end .h-wrap
 
 .menu-icon {
-  @extend %padding-large;
+  // @extend %padding-large;
+  padding: 2em 0;
   position: absolute;
   top: 0;
   right: 0;
