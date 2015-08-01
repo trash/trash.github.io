@@ -55,7 +55,30 @@ The reason for this is because my initial quick and dirty solution to map genera
 
 Now, the topic of generating 2D maps for games is a [fairly](http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/demo.html) well [covered](http://gamedev.stackexchange.com/questions/31241/random-map-generation) topic so I [won't](http://gamedevelopment.tutsplus.com/tutorials/create-a-procedurally-generated-dungeon-cave-system--gamedev-10099) cover it [here](http://stackoverflow.com/questions/2520131/looking-for-a-good-world-map-generation-algorithm). But I can summarize my algorithm from a very high level perspective.
 
+1. Generate a flat base sprite based on the biome. I.e. a huge swathe of green for the forest biome.
 
+2. Generate water on top of this.
+
+3. "Normalize" the water. What I mean by "normalize" here is to basically make the water and grass tiles mesh well.
+
+4. Randomize the biome tiles. I.e. we don't want solid green for every tile, we want to have a random assortment of tiles to break things up.
+
+5. "Bridge" islands that were created during the water step. Because the way water is generated randomly, there a portions of land that can become inaccessible (water cannot be traversed by any agent). This step takes care of this by spawning bridges of land over portions of water to make sure that all pieces of land are connected to at least one other portion of land. <small>Based on a basic graph theory proof this means that all land is connected.</small>
+
+6. Generate hills on the map. (There's also some normalization similar to water that has to happen here.)
+
+7. Generate resources. This generates all the trees, rocks, and bushes on the map.
+
+So let's break that down a little bit. The main interesting things are 1) how do we lay out the water on the map 2) what does "normalizing" the tiles mean 3) how do we generate bridges and 4) how do we generate resources/decide where they go.
+
+### Was ist das Wasser?
+
+#### Notice the corners of the water tiles overlapping where the grass should be visible
+<figure>
+  <a href="{{ site.baseurl }}/images/2015-08-01/water-bad.png">
+    <img src="{{ site.baseurl }}/images/2015-08-01/water-bad.png"/>
+  </a>
+</figure>
 
 ## Third Subject Header
 
