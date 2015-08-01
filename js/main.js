@@ -41,6 +41,13 @@ window.onload = function() {
         }
     }
 
+    // Properly style header links
+    if (window.location.pathname.indexOf('posts') !== -1) {
+        document.getElementById('posts').classList.add('active');
+    } else  {
+        document.getElementById('about').classList.add('active');
+    }
+
     // Open Twitter/share in a Pop-Up
     var $popup = document.getElementsByClassName('popup')[0];
     if (!$popup) {

@@ -81,11 +81,16 @@ small {
   font-size: 60%; 
 }
 
+main {
+  max-width: 60em; margin: 0 auto;
+}
+
 ul li { list-style-type: circle; }
 ol li { list-style-type: decimal; }
 
 a { 
-  color: $link-color; 
+  color: $link-color;
+  cursor: pointer; 
   &:hover {
     color: $text-color;
   }
