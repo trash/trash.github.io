@@ -39,7 +39,7 @@ Yay.
 
 ## "Wow this map isn't crap"
 
-To the discerning reader, the maps may have seemed a little bland and repetitive. And being a discerning reader, their observation with be very...discerned and correct and stuff. Because the generated maps *were* pretty bad.
+To the discerning reader, the maps may have seemed a little bland and repetitive. And being a discerning reader, their observation would be very...discerned and correct and stuff. Because the generated maps *were* pretty bad.
 
 ##### Ahhhhh my eyes! Oh the monotony and humanity!
 
@@ -55,15 +55,15 @@ The reason for this is because my initial quick and dirty solution to map genera
 
 Now, the topic of generating 2D maps for games is a [fairly](http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/demo.html) well [covered](http://gamedev.stackexchange.com/questions/31241/random-map-generation) topic so I [won't](http://gamedevelopment.tutsplus.com/tutorials/create-a-procedurally-generated-dungeon-cave-system--gamedev-10099) cover it [here](http://stackoverflow.com/questions/2520131/looking-for-a-good-world-map-generation-algorithm). But I can summarize my algorithm from a very high level perspective.
 
-1. Generate a flat base sprite based on the biome. I.e. a huge swathe of green for the forest biome.
+1. Generate a flat base sprite based on the biome. I.e. a huge swathe of green for the forest biome. Think of this as the base coat of paint.
 
 2. Generate water on top of this.
 
-3. "Normalize" the water. What I mean by "normalize" here is to basically make the water and grass tiles mesh well.
+3. "Normalize" the water. What I mean by "normalize" here is to basically make the water and grass tiles mesh well together.
 
 4. Randomize the biome tiles. I.e. we don't want solid green for every tile, we want to have a random assortment of tiles to break things up.
 
-5. "Bridge" islands that were created during the water step. Because the way water is generated randomly, there a portions of land that can become inaccessible (water cannot be traversed by any agent). This step takes care of this by spawning bridges of land over portions of water to make sure that all pieces of land are connected to at least one other portion of land. <small>Based on a basic graph theory proof this means that all land is connected.</small>
+5. "Bridge" islands that were created during the water step. Because the way water is generated randomly, there are portions of land that can become inaccessible <small>(water cannot be traversed by any agent)</small>. This step takes care of this by spawning bridges of land over portions of water to make sure that all pieces of land are connected to at least one other portion of land. <small>Based on a basic graph theory proof this means that all land is connected.</small>
 
 6. Generate hills on the map. (There's also some normalization similar to water that has to happen here.)
 
