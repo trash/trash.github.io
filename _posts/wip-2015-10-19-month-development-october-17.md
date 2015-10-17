@@ -26,6 +26,27 @@ Continuing the theme of last week I'm going to give a brief overview of a couple
 
 Let's get started.
 
+## Admining For Gold
+
+Let's start light with the admin menu, a feature that wasn't terribly hard to implement and can can be shown off with GIFs.
+
+Basically you can think of the admin menu as a sort of tool for me to test things. So I can trigger any event or spawn any item or monster on the map instantly. That and I can use it to spawn a horde of zombies and watch them destroy a village in seconds for my own sadistic amusement.
+
+#### Spawning A Zombie Horde From The Admin Menu
+<figure>
+  <a href="http://i.imgur.com/ogYl51q.gif">
+    <img src="http://i.imgur.com/ogYl51q.gif"/>
+  </a>
+</figure>
+
+#### Spawning Trees From The Admin Menu
+<figure>
+  <a href="http://i.imgur.com/oLyPOPN.gif">
+    <img src="http://i.imgur.com/oLyPOPN.gif"/>
+  </a>
+</figure>
+<small>Bonus points if you noticed the cursor changing between the first and second gif.</small>
+
 ## Inappropriate Behavior
 
 One of the first things I did was make a slight improvement to the very rudimentary "AI" that's in place in the game. The logic of agents in the game previously was very hardcoded. If you were a wolf, every turn you'd go and hunt out a specific type of creature (deer) and kill them. If you were a goblin you'd just auto-lock on to the nearest one of the player's villagers on the map like some sort of ugly, green Terminator and attack them until you died or the game ended.
@@ -75,12 +96,18 @@ Even if you're not a programmer, this should be pretty easy logic to parse if yo
 
 Which segways into the next part of the behaviors code, which is the ordering of these checks. Obviously it's probably more important that a monster hunter goes off and kills monsters than it is for him to go and chill in the tavern, right? Well that's exactly how it works. Currently these behaviors are prioritized and checked in an ordered fashion based on this logic.
 
-Sounds pretty good, right? Well, yes and no. While it is certainly an improvement to 
+Sounds pretty good, right? Well, yes and no. While it is certainly an improvement to original code, it's still not as granular or extensible as I'd like. While behaviors break up the logic somewhat into smaller, modular portions, they're still aren't small enough or modular enough that they can be fit together and interact with each other easily or nicely.
+
+I've thought about something more advanced like a formal decision tree that would allow these sorts of behaviors to be broken up and chained in more complex, interesting ways but haven't started planning anything out. One because that'd be a time consuming effort on its own and two because it would probably require a huge refactor of some very basic systems in the engine as it currently exists.
+
+## What's Next?
+
+So what's next? Well the next major focus for my efforts is going to be producing a breathing economy in game. I've laid down a little bit of the groundwork for these efforts: i.e. adventurers spawn with a list of items they like, and a pocket full of gold but there's still a lot to be done. The end goal is to have random visitors show up at the town and be able to buy things that your villagers produce. The things they purchase will be based on their personal desires, i.e. adventurers will prefer weapons and armor, and travelers might just buy some food and a bed in the tavern. I think the idea of tailoring your town's economy to the types of visitors you receive would be a really fun mechanic.
 
 
 ### Der Changelog
 
-[Changelog checkit]({{ site.baseurl }}/changelog/changelog-may-10)
+[Changelog checkit]({{ site.baseurl }}/changelog/changelog-oct-17)
 
 ## Subscribe
 
