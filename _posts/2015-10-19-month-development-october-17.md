@@ -100,7 +100,7 @@ Sounds pretty good, right? Well, yes and no. While it is certainly an improvemen
 
 Not only that but the hard-coded, fixed prioritization of behaviors ("hunt monsters before going to the tavern") leads to very predictable actions. What if the adventurer is kind of lazy and sometimes *chooses* to go to the tavern *even with* the imminent threat of a monster invasion? To me, that sounds more interesting than some taciturn, robotic, do-gooder. 
 
-With that in mind, I've thought about something more advanced like a formal decision tree that would allow these sorts of behaviors to be broken up and chained in more complex, interesting, and random ways. But I haven't started planning anything out yet. One, because that'd be a time consuming effort on its own and two because it would probably require a huge refactor of some very basic systems in the engine as they currently exists.
+With that in mind, I've thought about something more advanced like a formal behavior tree that would allow these sorts of behaviors to be broken up and chained in more complex, interesting, and random ways. My current code around actions and tasks is very similar to a behavior tree, it just lacks the formal structure to tie everything together. After reading an article on Gamasutra [about behavior trees in Project Zomboid](http://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php) it actually doesn't seem like it will be that large of refactor. That added with the fact that there's already a pretty [solid looking library](https://github.com/renatopp/behavior3js) for behavior trees in javascript, means I'm going to start experimenting with them in the near future.
 
 ## What's Next?
 
