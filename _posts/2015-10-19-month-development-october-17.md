@@ -98,7 +98,7 @@ Which segways into the next part of the behaviors code, which is the ordering of
 
 Sounds pretty good, right? Well, yes and no. While it is certainly an improvement to the original code, it's still not as granular or extensible as I'd like. While behaviors break up the logic somewhat into smaller, modular portions, they're still aren't small enough or modular enough that they can be fit together and interact with each other easily or nicely.
 
-Not only that but the hard-coded, fixed prioritization of behaviors ("hunt monsters before going to the tavern") leads to very predictable actions. What if the adventurer is kind of lazy and sometimes *chooses* to go to the tavern *even with* the iminent threat of a monster invasion? To me, that sounds more interesting than some taciturn, robotic, do-gooder. 
+Not only that but the hard-coded, fixed prioritization of behaviors ("hunt monsters before going to the tavern") leads to very predictable actions. What if the adventurer is kind of lazy and sometimes *chooses* to go to the tavern *even with* the imminent threat of a monster invasion? To me, that sounds more interesting than some taciturn, robotic, do-gooder. 
 
 With that in mind, I've thought about something more advanced like a formal decision tree that would allow these sorts of behaviors to be broken up and chained in more complex, interesting, and random ways. But I haven't started planning anything out yet. One, because that'd be a time consuming effort on its own and two because it would probably require a huge refactor of some very basic systems in the engine as they currently exists.
 
