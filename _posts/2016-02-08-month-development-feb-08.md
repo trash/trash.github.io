@@ -24,7 +24,7 @@ In my [last blog post](/ripple/development/month-development-october-17/) I talk
 
 * Clicking on game objects outputs them to console
 * Buildings have names like "The Regal Mare"
-* Now using es6
+* Now using es6 (yayyy javascript)
 
 Let's jump right in.
 
@@ -92,10 +92,62 @@ Ah, goblins. Gobbos. The green skinned vermin of the fantasy realm. And what kin
   </a>
 </figure>
 
+Behavior trees were instrumental in fleshing out the goblins a little bit more. Though it may be a little hard to tell due to the speed of the gif, goblin's now take items and wander off the map. Before BTs this would have been a matter of hard coding a series of checks and tying them together in the desired filth-behavior. After BTs, it can all be condensed down into this concise, readable BT action:
+
+<figure>
+  <a href="{{ site.baseurl }}/images/2016-02-08/steal-code.png">
+  <img src="{{ site.baseurl }}/images/2016-02-08/steal-code.png">
+  </a>
+</figure>
+
+Not only that, but now if I want to make other monsters steal things as well, it's as simple as adding one line to their corresponding behavior tree.
+
+## Test Level Up
+
+Another thing I spent some time on during the past 4 months was implementing small "test" levels. Essentially what these are very small levels that are designed to hone in on a unit of functionality in the game and test to make sure it works. So when I was working on the goblins stealing items I created a very small map (20x20), with some items on it, and some goblins. (If you look back at the gif you'll notice the black background is showing because those the literal edges of the world are visible in one frame.)
+
+Before I used to have to test everything working at once which made focusing on one specific change and making sure it worked hard. The less variables at play, the easier it is to identify that something is working correctly (or horribly, horribly broken).
+
+One good example of test levels being used to focus on a feature (or bug in this case) was when I discovered an obscure bug where all villagers were performing the same task at the same time. What do I mean by this? Well let me show you (and continue my streak of flooding blog posts with gifs):
+
+<figure>
+  <a href="http://i.imgur.com/K5qEnM2.gif">
+  <img src="http://i.imgur.com/K5qEnM2.gif">
+  </a>
+</figure>
+
+You might not immediately see what's wrong but what's happening is all three villagers are following each other to pick up one piece of wood and take it to the building that's being constructed. What they're *supposed* to do is each pick up a *separate* piece of wood and *separately* bring it back to the building. Seems much more efficient, yeah?
+
+After creating this small test case, I could repeat and inspect the code of the game while this behavior happened and track down the root cause. What was the cause? Oh, I had just inadvertently created a hivemind for all villagers. "Wait. What?" Yeah, as I said earlier, starting to use behavior trees hasn't been entirely without its speed bumps.
+
+A little context first. Behavior tree implementations usually include some sort of construct to add a "memory" to the behavior tree. So instead of just iterating through the entire tree each turn you can leave off where you left off the last turn. E.g. if I need to find the nearest house and walk to it I shouldn't have to search for the house each turn. I should search for it once, save it to my the tree's "memory" and then reference it each time I'm walking.
+
+What happened here was that the memory for *all* villagers was *shared*. That means one of the villagers would search for a piece of a wood for the building and then the next villager, performing the same task, would also decide to pick up that wood. They'd all do the same thing every single turn. Part hilarious, part creepy. In retrospect, it might be a cool feature for an [ant race](http://dwarffortresswiki.org/index.php/DF2014:Antman) or something that all collectively share one memory/mind. (Would definitely have to have one of the random names for ant men be [Paul Rudd](https://www.youtube.com/watch?v=maAFcEU6atk).)
+
+## xxSaveMeFromMyselfxx666
+
+Last but certainly not least, in the past week I've also added the ability to save and load games. Super funny that this game has been in development for 600+ days and I just added save/load functionality. I never really needed it before but now I'm getting to the point where gameplay is starting to take shape and persistence is an important factor.
+
+I added names below villagers recently and once you start identifying them as "oh hey that's that guy who fought that zombie and somehow won" instead of "villager #3", things matter enough that you want one coherent narrative that persists from one sit down to the next. That's a really flowery way of saying "it's good to start where you left off".
+
+## What's Next?
+
+On the topic of next things, I'm going to be a little more transparent with my development goings on by making my [Trello board public](https://trello.com/b/nflkl8Nn/ripple). What is this? This is my board where I organize what my current development priorities are. You can see what I've recently finished, what's slated to be worked on next, and what I'm currently actually working on.
+
+I'm also thinking of updating the blog and a part of that I'm going to look at building the site to have my Trello board visible right on the homepage. I think it'll be pretty neat.
+
+Gameplay-wise my focus is on two things: 1) making the game kill you more/present a bigger challenge and 2) fleshing out the town visitor economy stuff.
+
+#1 is pretty straightforward. I'm going to accomplish this by making the game ramp up challenges as you grow your town. Right now it's pretty lax and the events are often enough to provide enough of a challenge or much entertainment.
+
+In a nutshell #2 is about having visitors come to your town. These won't be villagers apart of your town but rather passerbys. They'll each have their own desires and their main purpose initially will be to provide customers for your town store. So early game you might get some peasant types who are only interested in food and simple wares but later on you might get adventurers with pockets full of spoils looking to buy weapons and armor. They'll provide an avenue for wealth generation and I think make an interesting mechanic for players looking to focus on the possibly economic exploits of a fantasy town.
+
+#2 is a bigger, broader goal and I'm only planning on scratching the surface. In a month we'll see where I'm at.
+
 ### Der Changelog
 
 [Changelog checkit]({{ site.baseurl }}/changelog/changelog-oct-17)
 
 ## Subscribe
 
-As always, don't forget to <a href="/ripple/subscribe">subscribe</a> if you want to keep up with how the game is developing!
+Don't forget to <a href="/ripple/subscribe">subscribe</a> to stay up to date! I promise next time will include goblin massacres. (Don't subscribe if you don't hate goblins. This is a strictly anti-gobbo blog.)
