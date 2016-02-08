@@ -35,7 +35,7 @@ google_analytics:   UA-51746110-1
 
 markdown: kramdown
 permalink: pretty
-highlighter: pygments
+highlighter: rouge
 
 paginate: 10
 paginate_path: "/posts/:num"
@@ -49,12 +49,14 @@ sass:
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
 
+gems: [jekyll-paginate]
+
 kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: false
+  enable_coderay: false
 
   coderay:
     coderay_line_numbers: 
