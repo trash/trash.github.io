@@ -33,7 +33,7 @@ Let's jump right in.
 
 The day after I wrote the last blog post I committed the first change to work my way towards having the game AI use behavior trees (BTs). After quickly googling for BT solutions written in JavaScript I found a library called [b3](https://github.com/behavior3/behavior3js). I'm not sure it's actually supported anymore (the last commit was in July 2015), but I've been using it to great effect, making my own little tweaks as I go.
 
-After some initial mental hurdles of understanding how BTs work, made much easier by [this great blog post by the lead dev of Project Zomboid](www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php), I had some basic functioning AI. To be clear, I make it seem like it was a short, simple process but it really wasn't. I mean check out these commit messages from the first couple weeks:
+After some initial mental hurdles of understanding how BTs work, made much easier by [this great blog post by the lead dev of Project Zomboid](http://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php), I had some basic functioning AI. To be clear, I make it seem like it was a short, simple process but it really wasn't. I mean check out these commit messages from the first couple weeks:
 
 `2015-10-21 made a janked up wolf. everythig is laggy now`
 
