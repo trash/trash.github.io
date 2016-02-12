@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AI Don't Know What You're Talking About"
-date:   2016-02-08 12:00:00
+date:   2016-02-08 12:00:01
 categories: development
 comments: true
 image:

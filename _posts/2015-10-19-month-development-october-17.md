@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "The Month(s) In Development August 1st 2015 to October 17 2015"
-date:   2015-10-19 12:00:00
+title:  "Admin-ing For Gold"
+date:   2015-10-19 12:00:01
 categories: development
 comments: true
 image:
   feature: month-in-development-header.png
 ---
+
+##### The Month(s) In Development August 1st 2015 to October 17 2015
 
 It's been almost another 3 months of development. Actually, let's call it quasi-development. My time has been bombarded recently due to the release of Metal Gear Solid V as well as Disgaea 5 a couple of ridiculously time consuming games that I couldn't resist. I might have also reactivated my subscription to WoW for a month...but we won't talk about that.
 

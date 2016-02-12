@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "The Month(s) In Development May 10th 2015 to July 31st 2015"
-date:   2015-08-01 12:00:00
+title:  "Making A Better Map"
+date:   2015-08-01 12:00:01
 categories: development
 comments: true
 image:
   feature: month-in-development-header.png
 ---
+
+##### The Month(s) In Development May 10th 2015 to July 31st 2015
 
 Another 3 months of working on the game, another 200+ commits of code pushed.
 

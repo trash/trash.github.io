@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "The Month(s) In Development February 9th 2015 to May 9th 2015"
-date:   2015-05-10 12:00:00
+title:  "Programmer Art Is Satan"
+date:   2015-05-10 12:00:01
 categories: development
 comments: true
 image:
   feature: month-in-development-header.png
 ---
+
+##### The Month(s) In Development February 9th 2015 to May 9th 2015
 
 Another 3 months of development has passed since I last did a blog post. I pushed 249 commits to the codebase in that amount of time. Quite a few changes. A solid mix between a) work on the engine and improving performance as well b) work on art and the UI. Time to try to condense the changes down into something readable and perhaps even *interesting*. <small>(Cue gasp from the handful of people reading this.)</small>
 

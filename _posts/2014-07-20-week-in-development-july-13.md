@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "The Week In Development July 13th, 2014"
+title:  "The Tavern Of Doom"
 date:   2014-07-20 17:00:00
 categories: development
 comments: true
 image:
   feature: week-in-development-header.jpg
 ---
+
+##### The Week In Development July 13th, 2014
 
 "The Week In Development". Sounds so legitimate and professional. Only it's not. It's basically my excuse for not coming up with a more formal or interesting blog post. So in short I'll just run through the stuff I did related to code and development for the game over the past week. I'll be trying to get these out every week hopefully alongside other posts.
 
@@ -63,7 +65,7 @@ Wait let's add a feature (read: bug) in there: a citizen who becomes hungry duri
 
 What this means is if a citizen goes to sleep who is starving, they will actually perish in their sleep from starvation before they wake up. This happens. All. The. Time.
 
-"Okay, okay", you say, "just build more farms and houses. Less sleeping, more eating, and all that jazz." Okay but remember, working--so, building--tires citizens out more. So builders for especially long projects *always* die of starvation. Even if I switch every citizen in the game to the builder profession, the tavern for instance (a building high in resource costs) will never be completed. They will all die. They will all die every time. There will be no joy in the tavern tonight. Because there will be no tavern. And there will be no tavern because they're all dead.
+"Okay, okay", you say, "just build more farms and houses. Less sleeping, more eating, and all that jazz." Okay but remember, working--- so, building ---tires citizens out more. So builders for especially long projects *always* die of starvation. Even if I switch every citizen in the game to the builder profession, the tavern for instance (a building high in resource costs) will never be completed. They will all die. They will all die every time. There will be no joy in the tavern tonight. Because there will be no tavern. And there will be no tavern because they're all dead.
 
 *Ahem*. 
 

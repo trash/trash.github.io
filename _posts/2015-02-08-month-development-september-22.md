@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "The Month(s) In Development September 22nd 2014 to February 8th 2015"
+title:  "Don't Code In The Tub"
 date:   2015-02-08 17:00:00
 categories: development
 comments: true
 image:
   feature: month-in-development-header.png
 ---
+
+##### The Month(s) In Development September 22nd 2014 to February 8th 2015
 
 It's been 4 months since my last blog post and quite a bit has happened. According to [git shortlog]({{ site.baseurl }}/code/useful-git-stats-2/) I've commited 278 times to the repository in that time. Holy crow.
 

@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "The Month In Development August 17th - September 21st"
+title:  "The House That Bearsmasher Built"
 date:   2014-09-21 17:00:00
 categories: development
 comments: true
 image:
   feature: month-in-development-header.png
 ---
+
+##### The Month In Development August 17th - September 21st
 
 Something something it's been a while.
 
@@ -26,7 +28,7 @@ I imagine there are several ways in which the player can control how much of eac
 
 ### Cratos, God of Store
 
-So crates are pretty sweet. I mean when you guys are out and about and you see a crate, you prolly take off your cool sunglasses and say "damn" and stuff. I wish I was cool and had sunglass. **Ahem**. Anyway yeah crates are useful in Ripple. Items currently take up one tile on the map no matter what they are. This is especially a problem with a small map as items that you have a surplus of start filling up the screen. That means when you start the game and you aren't in the favor of the crate gods, your game looks like this.
+So crates are pretty sweet. I mean when you guys are out and about and you see a crate, you prolly take off your cool sunglasses and say "damn" and stuff. I wish I was cool and had sunglasses. **Ahem**. Anyway yeah crates are useful in Ripple. Items currently take up one tile on the map no matter what they are. This is especially a problem with a small map as items that you have a surplus of start filling up the screen. That means when you start the game and you aren't in the favor of the crate gods, your game looks like this.
 
 <figure>
   <img src="{{ site.baseurl }}/images/item-pile.png">

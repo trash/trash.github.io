@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "The Week(s) In Development July 20th and July 27th and August 3rd"
+title:  "A Woman Named Chet"
 date:   2014-08-17 17:00:00
 categories: development
 comments: true
 image:
   feature: week-in-development-header.jpg
 ---
+
+##### The Week(s) In Development July 20th and July 27th and August 3rd
 
 Woo it's been a while since I did one of these. In fact, I actually said I would try to do these on a weekly basis and then immediately after posting the first one took a hiatus for 2 weeks from posting anything.
 
