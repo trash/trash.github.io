@@ -42,7 +42,7 @@ window.onload = function() {
     }
 
     // Properly style header links
-    if (window.location.pathname === '/ripple/') {
+    if (window.location.pathname === '/') {
         document.getElementById('about').classList.add('active');
     } else  {
         document.getElementById('posts').classList.add('active');

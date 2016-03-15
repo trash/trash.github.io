@@ -193,4 +193,4 @@ In other news I'm a little over 2 weeks away from hitting 1 year straight of wri
 
 ## Subscribe
 
-Oh and don't forget to <a href="/ripple/subscribe">subscribe</a> if you want to keep up with how the game is developing!
+Oh and don't forget to <a href="/subscribe">subscribe</a> if you want to keep up with how the game is developing!

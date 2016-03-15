@@ -7,7 +7,7 @@ categories: development
 
 A couple of months ago I did a [informal AMA thing](https://www.reddit.com/r/gamedev/comments/37i77h/ive_been_writing_mostly_game_code_for_365_days/) on the /r/gamedev subreddit
 
-A bit over a year ago I started working on [Ripple](khalilravanna.github.io/ripple/) every day. I've made a lot of progress in that time (that'd be hilariously depressing if I hadn't) and learned several things along the way. Since I already have a series of blog posts talking about my progress on the game itself I thought it'd be a good idea to sit down and have a retrospective of sorts and take inventory on some of those lessons I've learned.
+A bit over a year ago I started working on [Ripple](khalilravanna.github.io/) every day. I've made a lot of progress in that time (that'd be hilariously depressing if I hadn't) and learned several things along the way. Since I already have a series of blog posts talking about my progress on the game itself I thought it'd be a good idea to sit down and have a retrospective of sorts and take inventory on some of those lessons I've learned.
 
 ### Games Take A Really Long Time To Develop
 
@@ -32,7 +32,7 @@ So how did I get to over a year of developing straight? Great question. I wish I
 git is wonderful. It really is. There's a million different reasons why git is great so I won't go into too much detail here but I'll just list some of the reasons I've found it as a great tool for development and productivity:
 
 * It breaks all your progress into logical steps and improvements.
-* You can [get a quick rundown of all you've completed in a window of time](http://khalilravanna.github.io/ripple/code/useful-git-stats-2/) with basically no effort.
+* You can [get a quick rundown of all you've completed in a window of time](http://khalilravanna.github.io/code/useful-git-stats-2/) with basically no effort.
 * Using it with github you can get a [neat "streak" tracker](https://i.imgur.com/VdddoLS.png) that shows you how long you've been working every day in a row.
 
 ##### Toggl

@@ -12,7 +12,7 @@ image:
 
 Four months as it turns out is very long in development time. And a lot has happened.
 
-In my [last blog post](/ripple/development/month-development-october-17/) I talked about improvements I had made to the AI to be a little bit more extensible. A part of that, I made mention of [behavior trees](https://en.wikipedia.org/wiki/Behavior_tree_(artificial_intelligence,_robotics_and_control)), something to the tune of "these changes are a partial fix and I should probably just use behavior trees". [DJ Khaled voice] "So what did we do? We rewrote the entirety of the AI to use behavior trees." Honestly, a massive, massive refactor. A huge portion of the old code is no longer being used at all. And the game couldn't be any better for it.
+In my [last blog post](/development/month-development-october-17/) I talked about improvements I had made to the AI to be a little bit more extensible. A part of that, I made mention of [behavior trees](https://en.wikipedia.org/wiki/Behavior_tree_(artificial_intelligence,_robotics_and_control)), something to the tune of "these changes are a partial fix and I should probably just use behavior trees". [DJ Khaled voice] "So what did we do? We rewrote the entirety of the AI to use behavior trees." Honestly, a massive, massive refactor. A huge portion of the old code is no longer being used at all. And the game couldn't be any better for it.
 
 #### Major Things:
 
@@ -150,4 +150,4 @@ Number 2. is a bigger, broader goal and I'm only planning on scratching the surf
 
 ## Subscribe
 
-Don't forget to <a href="/ripple/subscribe">subscribe</a> to stay up to date! I promise next time will include goblin massacres. (Don't subscribe if you don't hate goblins. This is a strictly anti-gobbo blog.)
+Don't forget to <a href="/subscribe">subscribe</a> to stay up to date! I promise next time will include goblin massacres. (Don't subscribe if you don't hate goblins. This is a strictly anti-gobbo blog.)

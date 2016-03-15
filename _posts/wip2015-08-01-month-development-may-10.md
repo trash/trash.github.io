@@ -90,4 +90,4 @@ So let's break that down a little bit. The main interesting things are 1) how do
 
 ## Subscribe
 
-Oh and don't forget to <a href="/ripple/subscribe">subscribe</a> if you want to keep up with how the game is developing!
+Oh and don't forget to <a href="/subscribe">subscribe</a> if you want to keep up with how the game is developing!

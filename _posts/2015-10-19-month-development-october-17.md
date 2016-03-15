@@ -120,4 +120,4 @@ I've got a vacation coming up so I'm looking forward to spending some time in so
 
 ## Subscribe
 
-As always, don't forget to <a href="/ripple/subscribe">subscribe</a> if you want to keep up with how the game is developing!
+As always, don't forget to <a href="/subscribe">subscribe</a> if you want to keep up with how the game is developing!

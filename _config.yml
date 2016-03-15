@@ -7,15 +7,15 @@ description: "Hey, I'm Stefan and this is my blog. I write about making games, w
 # Your name. Will show in your footer + sidebar 
 author: "Stefan Valentin"
 
-url: "/ripple"
-baseurl: "/ripple"
-homeurl: "/ripple/index.html"
+url: ""
+baseurl: ""
+homeurl: "index.html"
 
 # A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words. 
 author-bio: "Writer of code. Drinker of white russians. Dreams of owning a naked mole rat farm."
 site-description: "This is the development blog for the game I'm working on called Ripple. It's a 2D turn based simulation/strategy game that draws inspiration from Majesty, Dwarf Fortress, and the Sims."
-site-description-2: "For a more detailed description of my vision for the game check out <a href='/ripple/development/lets-call-it-ripple/'>this blog post</a>."
-site-description-3: "And if you want to stay updated on the game's progress don't forget to <a href='/ripple/subscribe/'>subscribe to the mailing list.</a>"
+site-description-2: "For a more detailed description of my vision for the game check out <a href='/development/lets-call-it-ripple/'>this blog post</a>."
+site-description-3: "And if you want to stay updated on the game's progress don't forget to <a href='/subscribe/'>subscribe to the mailing list.</a>"
 about-part-1: "Ripple is a fantasy town simulator that draws inspiration from Majesty, Dwarf Fortress, and the Sims. The goal of the game is to start with a group of unskilled settlers and try to build a thriving community in a harsh unforgiving environment."
 about-part-2: "The game also aims to include interesting random characters who wander the world and may visit your town, either offering aid or posing challenges for your settlement."
 about-part-3: "And finally each citizen in your town will lead an interesting life, with characteristics, skills, and interests that develop over time to set them apart from their fellow townspeople."
@@ -23,7 +23,7 @@ about-part-3: "And finally each citizen in your town will lead an interesting li
 # Social Accounts (mine, as placeholders)
 
 twitter: slowestbro
-github: khalilravanna
+github: trash
 
 # Google Analytics (you may want to changes these with yours or even delete :)
 

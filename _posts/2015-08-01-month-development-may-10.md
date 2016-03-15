@@ -165,4 +165,4 @@ Well, first of all I had a lot more planned for this post but talking about the 
 
 ## Subscribe
 
-Oh and don't forget to <a href="/ripple/subscribe">subscribe</a> if you want to keep up with how the game is developing!
+Oh and don't forget to <a href="/subscribe">subscribe</a> if you want to keep up with how the game is developing!
