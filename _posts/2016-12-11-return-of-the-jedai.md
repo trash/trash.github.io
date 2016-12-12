@@ -62,4 +62,6 @@ The next month is going to be rather hectic with holidays but I predict a lot of
 
 Big picture I'm still in the process of porting over the major functionality that was in the game before the rewrite. I've also decided to hone in the feature-set a bit and to leave out of a lot of the more in-depth simulation-y bits. The end goal is to get something like a functional [Majesty](http://store.steampowered.com/app/25990/) clone working in the near future. When that's working and fun, then I can start tacking on and refining the more Dwarf-Fortress-y systems I had before.
 
-As always hit the [subscribe link](/subscribe) in the footer if you want to stay up to date on the game. I promise I won't spam you. <small>Looks like I'm averaging 3 or 4 blog posts a year so you're probably good.</small>
+I'm also going to try and get in the habit of writing more bite-size blog posts instead of these monolithic once-or-twice-a-year updates. One of the changes I made most recently improved the transparency of the AI in a really big way. It's an interesting feature and required some interesting problem solving. <small>Yay tree traversal algorithms.</small> Because of this I'm going to set a reminder to write a blog post about it in a week or two. So [stay tuned for that](/subscribe).
+
+As always hit the subscribe link in the footer if you want to stay up to date on the game. I promise I won't spam you. <small>Looks like I'm averaging 3 or 4 blog posts a year so you're probably good.</small>
