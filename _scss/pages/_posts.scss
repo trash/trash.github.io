@@ -69,6 +69,12 @@
     }
   }
 
+  ul li ul,
+  ol li ol {
+    margin: $spacing-xs;
+    margin-left: $spacing-m;
+  }
+
   blockquote {
     font-size: 150%;
     font-family: $font-family;
