@@ -23,7 +23,7 @@ Obviously since it's been 2/3 of a year since I last wrote an update there have 
 
 ## Game Development Is Hard
 
-As a quick aside, I'd like to address the fact that game development is hard. In fact it might actually be insane. Game development is crazy because what it comes down to is designing Fun. And what is Fun? That's often an unanswerable question. And I don't just mean unanswerable because it's subjective; like some people like shooting space nazis in Call of Duty (or whatever they're doing in that series now) and other people like to act out complex Game of Thrones scenarios in Crusader Kings II. I mean Fun can really be ineffable. "Why do you like Mario?" "I dunno...I like pixelated Italian men jumping in green...tubes?"
+Before I jump into the technical stuff, I'd like to address the fact that game development is hard. In fact it might actually be insane. Game development is crazy because what it comes down to is designing Fun. And what is Fun? That's often an unanswerable question. And I don't just mean unanswerable because it's subjective; like some people like shooting space nazis in Call of Duty (or whatever they're doing in that series now) and other people like to act out complex Game of Thrones scenarios in Crusader Kings II. I mean Fun can really be ineffable. "Why do you like Mario?" "I dunno...I like pixelated Italian men jumping in green...tubes?"
 
 A lot of the best games are the result of people prototyping out small little mechanics or systems, playing around with them, and then saying "Hey, this is fun." They might do a little more homework and ruminate on "what" about the game is fun or "why" the thing they're playing is fun but I think oftentimes people just count their blessings and move on knowing they're on to something good. They're on to something *fun*.
 
@@ -58,7 +58,7 @@ What's left is a codebase where every piece of code has a purpose and every feat
 
 ## What's Next
 
-The next month is going to be rather hectic with holidays but I predict a lot of downtime working on game code. As always if you're interested you can check in on what I'm working on at my [Trello Board](https://trello.com/b/nflkl8Nn/ripple) which lists everything I'm actively working on.
+The next month is going to be rather hectic with holidays but I predict a lot of downtime working on game code. As always if you're interested you can check in on what I'm doing over on my [Trello Board](https://trello.com/b/nflkl8Nn/ripple) which lists everything I'm actively working on.
 
 Big picture I'm still in the process of porting over the major functionality that was in the game before the rewrite. I've also decided to hone in the feature-set a bit and to leave out of a lot of the more in-depth simulation-y bits. The end goal is to get something like a functional [Majesty](http://store.steampowered.com/app/25990/) clone working in the near future. When that's working and fun, then I can start tacking on and refining the more Dwarf-Fortress-y systems I had before.
 
