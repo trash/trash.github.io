@@ -16,8 +16,7 @@ I bet you were wondering what I've been doing since I haven't posted in 8 months
 * Conversion of the core game code to the Entity Component System pattern...which turned into a rewrite of the entire game/engine. As they say on [/r/dwarffortress](https://www.reddit.com/r/dwarffortress/comments/5hl5ky/your_daily_reminder_that_elves_are_scum/): "it was inevitable."
 * Rewrote the mapgen code, some of the oldest code (2+ years?), to make it more extensible and intelligible.
 * Things are actually rendered and animated properly for the first time since the project began. Before when you would speed up the game the animations would bug out.
-
-- Rewrote behavior trees to make them more transparent. You can actually tell why your villagers are doing what they're doing now without having to dive into the code.
+* Rewrote behavior trees to make them more transparent. You can actually tell why your villagers are doing what they're doing now without having to dive into the code.
 
 Obviously since it's been 2/3 of a year since I last wrote an update there have been a ton of changes but that list is pared down to the biggest ones. I could spend several blog posts touching on each point and decision but I'll just talk about the most monumental changes which almost exclusively revolve around an entire rewrite of the engine.
 
