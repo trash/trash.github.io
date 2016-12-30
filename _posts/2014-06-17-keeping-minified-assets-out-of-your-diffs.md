@@ -24,7 +24,7 @@ is too dumb to know it has to build the minified assets, and instead expects the
 
 
 So we need these minified assets in the repo so they get served. Ok let's just leave them and see what happens. Well, we find out what ends up happening when we don't ignore minified assets the next time we run `git diff` and our console starts looking like the blood orgy scene from Event Horizon:
-{% highlight css %}
+```css
 se,.mfp-iframe-holder .mfp-close{right:-6px;width:100%;padding-right:6px;color:white;text-align:right}.mfp-counter{position:absolute;top:0;right:0;font-siz
 e:12px;line-height:18px;color:#ccc}.mfp-arrow{position:absolute;top:0;top:50%;width:90px;height:110px;padding:0;margin:0;margin-top:-55px;overflow:hidden;t
 ext-indent:100%;white-space:nowrap;background-color:#111;opacity:.65;-webkit-transition:opacity .2s ease-in-out;-moz-transition:opacity .2s ease-in-out;-ms
@@ -32,7 +32,7 @@ ext-indent:100%;white-space:nowrap;background-color:#111;opacity:.65;-webkit-tra
 -arrow:active{margin-top:-54px}.mfp-arrow:hover,.mfp-arrow:focus{opacity:1}.mfp-arrow:before,.mfp-arrow:after,.mfp-arrow .mfp-b,.mfp-arrow .mfp-a{position:
 absolute;top:0;left:0;display:block;width:0;height:0;margin-top:35px;margin-left:35px;border:solid transparent;content:''}.mfp-arrow:after,.mfp-arrow .mfp-
 a{top:8px;border-top-width:12px;border-bottom-width:12px;opacity:.8}.mfp-arrow:before,.mfp-arrow .mfp-b{border-top-width:20px;border-bottom-width:20px}.mfp
-{% endhighlight %}
+```
 
 
 You'll have to sift through that to see your changes every time you make a change to css that gets compiled.
@@ -42,14 +42,14 @@ file and telling git to treat our minified assets as a binary. This means that e
 
 Let's say the file causing us agony is `assets/css/main.min.css`. You'd just make a `.gitattributes` file with this line:
 
-{% highlight bash %}
+```bash
 assets/css/main.min.css binary
-{% endhighlight %}
+```
 
 Then that garbage up above in our `git diff` output becomes this:
-{% highlight bash %}
+```bash
 Binary files a/assets/css/main.min.css and b/assets/css/main.min.css differ
-{% endhighlight %}
+```
 
 <figure>
 	<img src="{{ site.baseurl }}/images/regular-show-oh.gif">

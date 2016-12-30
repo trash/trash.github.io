@@ -59,7 +59,7 @@ Problem two is if I wanted to have multiple things an agent could do in tandem l
 
 So what I ended up with is a still very rudimentary, but somewhat improved solution. Basically it starts with a list of "behaviors". For the adventurer this is:
 
-{% highlight js %}
+```js
 behavior: [
 	'buys-things',
 	'monster-hunter',
@@ -68,11 +68,11 @@ behavior: [
 	'tavern-dweller',
 	'rests-in-tavern'
 ]
-{% endhighlight %}
+```
 
 So each one of these "behaviors" is a single unit of behavior. And every turn an agent doesn't have anything to do they'll pick one of these behaviors from the list and try to carry it out. Let's take a specific example of the `monster-hunter` behavior:
 
-{% highlight js %}
+```js
 'monster-hunter': function () {
 	// Find a monster
 	var agentToAttack = this.get('gameManager').randomAgent(this.id, {
@@ -92,7 +92,7 @@ So each one of these "behaviors" is a single unit of behavior. And every turn an
 		}
 	}
 }
-{% endhighlight %}
+```
 
 Even if you're not a programmer, this should be pretty easy logic to parse if you look at the comments (the lines that start with `//`). Basically the agent looks for a monster, goes to attack it if it finds one, otherwise they look for a monster lair and go attack that if there is one. What happens if there are no monsters *or* lairs? Well, it returns nothing. Which means the agent then continues on through their list of "behaviors" to find the next one that they *can* do.
 
