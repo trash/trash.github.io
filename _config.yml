@@ -4,14 +4,14 @@ name: "Ripple"
 # Description of your content (will only be used on Google Search)
 description: "Hey, I'm Stefan and this is my blog. I write about making games, writing code, and whatever else."
 
-# Your name. Will show in your footer + sidebar 
+# Your name. Will show in your footer + sidebar
 author: "Stefan Valentin"
 
 url: ""
 baseurl: ""
 homeurl: "index.html"
 
-# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words. 
+# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
 author-bio: "Writer of code. Drinker of white russians. Dreams of owning a naked mole rat farm."
 site-description: "This is the development blog for the game I'm working on called Ripple. It's a 2D turn based simulation/strategy game that draws inspiration from Majesty, Dwarf Fortress, and the Sims."
 site-description-2: "For a more detailed description of my vision for the game check out <a href='/development/lets-call-it-ripple/'>this blog post</a>."
@@ -62,8 +62,10 @@ kramdown:
   enable_coderay: false
 
   coderay:
-    coderay_line_numbers: 
+    coderay_line_numbers:
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: class
+
+exclude: ['node_modules']
