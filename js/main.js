@@ -1,3 +1,30 @@
+function offset (elem) {
+    if (!elem) {
+        return;
+    }
+
+    var rect = elem.getBoundingClientRect();
+
+    // Make sure element is not hidden (display: none) or disconnected
+    if (rect.width || rect.height || elem.getClientRects().length ) {
+        var doc = elem.ownerDocument;
+        var win = window;
+        var docElem = doc.documentElement;
+
+        return {
+            top: rect.top + win.pageYOffset - docElem.clientTop,
+            left: rect.left + win.pageXOffset - docElem.clientLeft
+        };
+    }
+}
+
+function highlightElement (element) {
+    element.style.background = 'yellow';
+}
+function unhighlightElement (element) {
+    element.style.background = '';
+}
+
 window.onload = function() {
 
     var $menuIcon = document.getElementsByClassName('menu-icon')[0],
@@ -70,4 +97,43 @@ window.onload = function() {
 
         return false;
     });
+
+    var citations = document.querySelectorAll('.citation');
+    var citationsBlock = document.querySelector('.citations-block');
+
+    if (citations.length) {
+        Array.prototype.forEach.call(citations, function (citation) {
+            var number = parseInt(citation.textContent.match(/\d/));
+            var citationEntry = citationsBlock.children[number - 1];
+
+            var citationPosition = Math.abs(offset(citation.parentNode).top);
+            var citationEntryPosition = Math.abs(offset(citationEntry.parentNode).top);
+
+            var citationEntryClickListener = function () {
+                unhighlightElement(citation);
+                document.body.removeEventListener('click', citationEntryClickListener);
+            };
+            var citationClickListener = function () {
+                unhighlightElement(citationEntry);
+                document.body.removeEventListener('click', citationClickListener);
+            };
+
+            citationEntry
+                .addEventListener('click', function () {
+                    document.body.scrollTop = citationPosition - 16;
+                    highlightElement(citation);
+                    setTimeout(function () {
+                        document.body.addEventListener('click', citationEntryClickListener);
+                    }, 1);
+                });
+            citation
+                .addEventListener('click', function () {
+                    document.body.scrollTop = citationEntryPosition - 16;
+                    highlightElement(citationEntry);
+                    setTimeout(function () {
+                        document.body.addEventListener('click', citationClickListener);
+                    }, 1);
+                });
+        });
+    }
 }
