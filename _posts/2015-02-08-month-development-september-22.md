@@ -5,7 +5,7 @@ date:   2015-02-08 17:00:00
 categories: development
 comments: true
 image:
-  feature: month-in-development-header.png
+  feature: month-in-development.png
 ---
 
 ##### The Month(s) In Development September 22nd 2014 to February 8th 2015
@@ -60,7 +60,7 @@ So how do you tell how your town is doing? Why from the town overview panel of c
   </a>
 </figure>
 
-Right now it's not that fleshed out but the idea is similar to other games in this space, it will give you an insight into the overall state of your town. Maybe later on I'll add nice graphs and things similar to Banished's menus. 
+Right now it's not that fleshed out but the idea is similar to other games in this space, it will give you an insight into the overall state of your town. Maybe later on I'll add nice graphs and things similar to Banished's menus.
 
 #### 4) Wealth system
 
@@ -113,7 +113,7 @@ Why is this a major feature? Well, this reduces the overhead for introducing new
 
 First up on the agenda is work on a new hunting mechanic. With the recent addition of non-citizen npcs I want to start introducing more fauna into the surrounding world. And of course after introducing new animals into the world I have to figure out ways that you can kill them. Hunting.
 
-I also just reached out to an artist who's sprite work I really like. I hope to start working him in the near future to start defining a real visual style for the game as well as replacing some of my shoddy [programmer art](http://en.wikipedia.org/wiki/Programmer_art)). I'm really, really excited for that as well. 
+I also just reached out to an artist who's sprite work I really like. I hope to start working him in the near future to start defining a real visual style for the game as well as replacing some of my shoddy [programmer art](http://en.wikipedia.org/wiki/Programmer_art)). I'm really, really excited for that as well.
 
 Sometime next week I'll try (hah) and do another blog post about the hunting mechanic and hopefully by then I'll have some more news on the art front.
 

@@ -5,7 +5,7 @@ date:   2015-08-01 12:00:00
 categories: changelog
 comments: true
 image:
-  feature: month-in-development-header.png
+  feature: month-in-development.png
 ---
 
 ### Der Changelog

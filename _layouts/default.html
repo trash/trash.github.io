@@ -60,7 +60,11 @@
 					<a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
 				</div>
 				<div class="header-image-wrap">
-					<img src="{{ site.baseurl }}/images/ripple-banner.png"/>
+					{% if page.image.feature %}
+					<img src="{{ site.baseurl }}/images/headers/{{ page.image.feature }}"/>
+					{% else %}
+					<img src="{{ site.baseurl }}/images/headers/ripple-banner.png"/>
+					{% endif %}
 				</div>
 			</header>
 

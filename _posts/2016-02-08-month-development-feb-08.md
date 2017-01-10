@@ -5,7 +5,7 @@ date:   2016-02-08 12:00:01
 categories: development
 comments: true
 image:
-  feature: month-in-development-header.png
+  feature: month-in-development.png
 ---
 
 ##### The Month(s) In Development October 14th 2015 to February 6th 2016

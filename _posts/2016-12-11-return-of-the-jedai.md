@@ -5,7 +5,7 @@ date:   2016-12-11 12:00:01
 categories: development
 comments: true
 image:
-  feature: month-in-development-header.png
+  feature: month-in-development.png
 ---
 
 I bet you were wondering what I've been doing since I haven't posted in 8 months. I bet you were also thinking that I couldn't possibly keep up the streak of terrible punny titles. Well, you thought wrong. Hold on-- that response doesn't make sense for both things. Whatever let's just talk about what I've been doing.
@@ -53,7 +53,7 @@ Introducing ECS was such an intensive refactor that I ended up touching almost e
 
 While this may sound like I'm rehashing work I've already done there's two upshots. One: progress has been faster than it's ever been due to the rewrite. And two: every feature that's readded gives me a chance to rework it and refine it.
 
-What's left is a codebase where every piece of code has a purpose and every feature functions fully. Think well oiled machine vs some David-Cronenberg-esque, patchwork monster. Beyond this, my development has been a lot more focused. I'm spending more time on adding features that *need* to exist today as opposed to spending time fixing features that were dubiously added because they *might* be needed tomorrow. 
+What's left is a codebase where every piece of code has a purpose and every feature functions fully. Think well oiled machine vs some David-Cronenberg-esque, patchwork monster. Beyond this, my development has been a lot more focused. I'm spending more time on adding features that *need* to exist today as opposed to spending time fixing features that were dubiously added because they *might* be needed tomorrow.
 
 ## What's Next
 

@@ -4,13 +4,11 @@ title:  "Let's Call It Ripple"
 date:   2014-07-12 19:33:00
 categories: development
 comments: true
-image:
-  feature: ripplepostheader.png
 ---
 
 So I made a game. Let's call it Ripple.
 
-It's kind of crazy that I've only been working on the game for two months because a lot has happened in that time. 240 commits. I've written code for the game every single day for 47 days straight. A port from full HTML to actual graphics using the Phaser game engine. 
+It's kind of crazy that I've only been working on the game for two months because a lot has happened in that time. 240 commits. I've written code for the game every single day for 47 days straight. A port from full HTML to actual graphics using the Phaser game engine.
 
 ## So what is it?
 
@@ -18,16 +16,16 @@ It's kind of crazy that I've only been working on the game for two months becaus
 
 In short it's a fantasy town simulator. It'll be part Dwarf Fortress, part Banished or Simcity, and part Majesty.
 
-The emphasis will be on building a town while still making individuals in the town be important and unique. That is to say I want to support at least two main play styles. 
+The emphasis will be on building a town while still making individuals in the town be important and unique. That is to say I want to support at least two main play styles.
 
 1. The player who wants to build a thriving town in a vibrant, breathing, fantasy environment. More interested in braving the wilds and ensuring the success of the town's economy than the doting on the minutiae of every individual citizen's life-happenings.
-2. The player who wants to build a town so they can sit back and watch all the absurd, amusing, and tragic things that happen in their citizen's lives. 
+2. The player who wants to build a town so they can sit back and watch all the absurd, amusing, and tragic things that happen in their citizen's lives.
 
 As with any good simulation the emphasis will be on providing compelling, emergent gameplay. Meaning the world will foster interesting and unique stories every time you play it. The game will feature mechanics complex enough to require mastery but not so complex as to be esoteric or impossible to understand.
 
 ## What sets it apart?
 
-So, what will make up the game? What defines it? What sets it apart from Dwarf Fortress and its inspired relatives: Spacebase DF9, Stonehearth, Clockwork Empires, or Rimworld? 
+So, what will make up the game? What defines it? What sets it apart from Dwarf Fortress and its inspired relatives: Spacebase DF9, Stonehearth, Clockwork Empires, or Rimworld?
 
 The environment and context for one. I'm heavily inspired by Dungeons and Dragons. Specifically I've been reading a whole lot of R.A. Salvatore, and playing Forgotten Realms games like Baldur's Gate and Icewind Dale. It would be very apt to say that I see this as a game about settling a town in a random corner of Faerûn or some other fantasy landscape. Places where conflict and danger exist around every corner. I see this as a game about hardship and difficulty, about simulating the excitement of what it would be like to be on the edge of civilization in a foreign and magical land.
 
@@ -49,7 +47,7 @@ There's more I can add here that I desire to implement in the game, but these ar
 
 Right now I'm 2 months of development in. I have a very basic simulation: citizens eat and sleep, they manage tasks for jobs and have basic prioritization skills. And that's about it. But for 2 months of work (part time as I work full time as a software engineer) it's definitely progress.
 
-That and it's been 2 months of *consistent* progress. I work on the game every day, have commited code 47 days straight, and see no sign of stopping or breaking the streak. 
+That and it's been 2 months of *consistent* progress. I work on the game every day, have commited code 47 days straight, and see no sign of stopping or breaking the streak.
 
 This is my dream game and now that I've started I won't stop until it's completed.
 
@@ -59,7 +57,7 @@ Nothing. I'm not planning on doing a Kickstarter any time soon and am clearly no
 
 Maybe further down the line when I have something playable I'll consider doing a Kickstarter. But that would only be to allow myself to work on the game full time without starving to death. As it stands, my plans are to self fund and self produce for the extended future.
 
-I've started this blog for a couple reasons. 
+I've started this blog for a couple reasons.
 
 * I think being transparent as a game developer is hugely valuable to prospective fans and a really cool thing to do.
 * I really like developers who go into the technical details and the theory crafting that goes into game development. I find it to be really inspiring stuff, and the trend of this becoming popular of recent has helped me finally get around to starting this project.
@@ -69,7 +67,7 @@ I've started this blog for a couple reasons.
 
 ## Stay tuned
 
-Now that the game is all "announced" and stuff I'll be trying to get these posts out more frequently. Perhaps biweekly or weekly if I'm feeling especially uppity/inspired/time-having. 
+Now that the game is all "announced" and stuff I'll be trying to get these posts out more frequently. Perhaps biweekly or weekly if I'm feeling especially uppity/inspired/time-having.
 
 Next week I'll either do a blog post on how I've come along technically as far as development or I'll write a post on a game that really inspires me.
 
