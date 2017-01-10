@@ -7,3 +7,4 @@ node_modules
 doc
 app
 typings
+npm-debug.log

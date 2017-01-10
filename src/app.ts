@@ -1,5 +1,5 @@
 import {bootstrapCitation} from './bootstrap-citations';
 
-window.onload = () => {
+window.addEventListener('load', () => {
     bootstrapCitation();
-}
+});
