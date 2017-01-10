@@ -31,6 +31,9 @@
 			<nav>
 				<h6>Follow me on</h6>
 				<ul>
+					{% if site.email %}
+					<li><a href="mailto:{{ site.email }}?Subject=I%20Love%20Ripple">Email</a></li>
+					{% endif %}
 					{% if site.twitter %}
 					<li><a target="_blank" href="https://twitter.com/{{ site.twitter }}">Twitter</a></li>
 					{% endif %}
