@@ -1,17 +1,11 @@
 ---
 layout: page
 permalink: /subscribe/
-title:
+title: Subscribe
 tagline: Minimal Mistakes, a Jekyll Theme
 tags: [about, Jekyll, theme, responsive]
 modified: 9-9-2013
-image:
-  feature: skinny-skrimble.jpg
-  <!-- credit: Texture Lovers -->
-  <!-- creditlink: http://texturelovers.com -->
 ---
-
-# Subscribe
 
 If you're interested in staying up to date on the development of the game, and hearing about all the thoughts and theory crafting along the way, sign up for the mailing list.
 
